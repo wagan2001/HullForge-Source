@@ -1,0 +1,142 @@
+{
+  "Captured": "2026-09-08",
+  "Provenance": "User inspected in From the Depths and hand-corrected each listed fill. Matching game re-saves were geometry-identical to generated candidates before correction. Hashes cover normalized geometry only; no player state or file-local IDs retained.",
+  "Cases": [
+    {
+      "Name": "Review_01_Typical_VFill",
+      "Source": "Constructables/Hull Generator/handmade_ground_truth/medium_fill_corrections_2026-09-08/Review_01_Typical_VFill.blueprint",
+      "Method": "VerticalSlopeFill",
+      "Parameters": {
+        "Length": 96,
+        "Width": 25,
+        "Height": 15,
+        "BowFullness": 0.54,
+        "SternFullness": 0,
+        "CrossSectionCurve": 0.35,
+        "Material": "Metal",
+        "HasDeck": true,
+        "Beamify": true
+      },
+      "Bounds": [
+        [
+          -12,
+          0,
+          -48
+        ],
+        [
+          12,
+          14,
+          47
+        ]
+      ],
+      "BaseBlockCount": 2291,
+      "BaseOccupiedCellCount": 4161,
+      "BaseCellSha256": "82D38F6721DB8167391AB8C1697FE4DA293EA2DC5854CE55C5742D16548054EE",
+      "ExpectedSlopeCount": 248,
+      "ExpectedBlockCount": 2539,
+      "ExpectedSlopePlacementSha256": "30BE8F2A988C30282AFEF06602C168080ED6494600D6D551063F51BCBFAFBE1B"
+    },
+    {
+      "Name": "Review_03_WideShallow_HFill",
+      "Source": "Constructables/Hull Generator/handmade_ground_truth/medium_fill_corrections_2026-09-08/Review_03_WideShallow_HFill.blueprint",
+      "Method": "HorizontalSlopeFill",
+      "Parameters": {
+        "Length": 80,
+        "Width": 35,
+        "Height": 12,
+        "BowFullness": 0.54,
+        "SternFullness": 0,
+        "CrossSectionCurve": 0.35,
+        "Material": "Metal",
+        "HasDeck": true,
+        "Beamify": true
+      },
+      "Bounds": [
+        [
+          -17,
+          0,
+          -40
+        ],
+        [
+          17,
+          11,
+          39
+        ]
+      ],
+      "BaseBlockCount": 1933,
+      "BaseOccupiedCellCount": 4100,
+      "BaseCellSha256": "B10BBE11175DA70369E1D77CF86EA7E970829DD0BB0F765B721575820CED1729",
+      "ExpectedSlopeCount": 302,
+      "ExpectedBlockCount": 2235,
+      "ExpectedSlopePlacementSha256": "34480163AFF0E51482C32072919EF2E4AA6542BF4766025B7FBEC8E2E4854289"
+    },
+    {
+      "Name": "Review_04_LongSternRisers_VFill",
+      "Source": "Constructables/Hull Generator/handmade_ground_truth/medium_fill_corrections_2026-09-08/Review_04_LongSternRisers_VFill.blueprint",
+      "Method": "VerticalSlopeFill",
+      "Parameters": {
+        "Length": 80,
+        "Width": 41,
+        "Height": 41,
+        "BowFullness": 0,
+        "SternFullness": 0.9,
+        "CrossSectionCurve": 0.9,
+        "Material": "Metal",
+        "HasDeck": true,
+        "Beamify": true
+      },
+      "Bounds": [
+        [
+          -20,
+          0,
+          -40
+        ],
+        [
+          20,
+          40,
+          39
+        ]
+      ],
+      "BaseBlockCount": 4851,
+      "BaseOccupiedCellCount": 8622,
+      "BaseCellSha256": "541C8E29C82D436EB1EE8EDACD406E2576FA0DEE5D51064FC56F9FFB9F7E080A",
+      "ExpectedSlopeCount": 770,
+      "ExpectedBlockCount": 5621,
+      "ExpectedSlopePlacementSha256": "C7B2A5463C3FD584E4978F38695B80B05A7B046165C0F89FBEDD097F58D659F7"
+    },
+    {
+      "Name": "Review_04_LongSternRisers_HFill",
+      "Source": "Constructables/Hull Generator/handmade_ground_truth/medium_fill_corrections_2026-09-08/Review_04_LongSternRisers_HFill.blueprint",
+      "Method": "HorizontalSlopeFill",
+      "Parameters": {
+        "Length": 80,
+        "Width": 41,
+        "Height": 41,
+        "BowFullness": 0,
+        "SternFullness": 0.9,
+        "CrossSectionCurve": 0.9,
+        "Material": "Metal",
+        "HasDeck": true,
+        "Beamify": true
+      },
+      "Bounds": [
+        [
+          -20,
+          0,
+          -40
+        ],
+        [
+          20,
+          40,
+          39
+        ]
+      ],
+      "BaseBlockCount": 4851,
+      "BaseOccupiedCellCount": 8622,
+      "BaseCellSha256": "541C8E29C82D436EB1EE8EDACD406E2576FA0DEE5D51064FC56F9FFB9F7E080A",
+      "ExpectedSlopeCount": 1426,
+      "ExpectedBlockCount": 6277,
+      "ExpectedSlopePlacementSha256": "8036F1805F83B6CC7C407F14EE48EFB282F75ED6FAF56FF457B0D47C2B4B273B"
+    }
+  ]
+}

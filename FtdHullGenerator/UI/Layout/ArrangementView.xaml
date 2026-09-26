@@ -1,0 +1,195 @@
+<UserControl x:Class="FtdHullGenerator.UI.Layout.ArrangementView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:layout="clr-namespace:FtdHullGenerator.UI.Layout"
+             xmlns:ui="clr-namespace:FtdHullGenerator.UI"
+             MinHeight="150" UseLayoutRounding="True">
+    <!-- One scroller covers the toolbar, ruler and property editor so a short bottom workspace
+         can always reach every frozen input. The editor data context lives on this inner root so
+         the element that carries the Workspace dependency-property binding keeps the host's data
+         context and cannot loop. -->
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
+                  CanContentScroll="False" Focusable="False">
+        <StackPanel x:Name="EditorRoot" MinWidth="620">
+            <DockPanel Margin="2,0,2,4">
+                <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
+                    <Button x:Name="AddBarbetteButton" Style="{StaticResource CompactButtonStyle}"
+                            Content="Add barbette" Click="AddBarbetteClicked"
+                            IsEnabled="{Binding CanAddBarbette}"
+                            AutomationProperties.Name="Add centerline barbette" />
+                    <Button x:Name="RemoveBarbetteButton" Style="{StaticResource CompactButtonStyle}" Margin="6,0,0,0"
+                            Content="Remove barbette" Click="RemoveBarbetteClicked"
+                            IsEnabled="{Binding HasSelection}"
+                            AutomationProperties.Name="Remove selected centerline barbette" />
+                </StackPanel>
+                <TextBlock Text="{Binding Summary}" Style="{StaticResource MetricLabelStyle}"
+                           TextTrimming="CharacterEllipsis" VerticalAlignment="Center" Margin="10,0,0,0" />
+            </DockPanel>
+
+            <layout:BarbetteRuler x:Name="Ruler" Margin="0,0,0,4" MinWidth="620"
+                                  Model="{Binding Ruler}"
+                                  SelectedBarbetteId="{Binding SelectedBarbetteId, Mode=TwoWay}"
+                                  AutomationProperties.Name="Bow to stern barbette ruler" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="210" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <ListBox x:Name="BarbetteList" Grid.Column="0" MinHeight="90" Margin="0,0,8,0"
+                         ItemsSource="{Binding Barbettes}"
+                         SelectedItem="{Binding SelectedBarbette, Mode=TwoWay}"
+                         DisplayMemberPath="DisplayName"
+                         AutomationProperties.Name="Centerline barbette list" />
+
+                <StackPanel Grid.Column="1" Margin="4,0,0,0">
+                    <TextBlock Text="Selected barbette" Style="{StaticResource SectionHeadingStyle}" />
+                    <TextBlock Style="{StaticResource MetricLabelStyle}" TextWrapping="Wrap" Margin="0,2,0,6"
+                               Text="Clear volume is authoritative; armor grows away from it. A drag moves only the selected barbette in exact one-metre steps." />
+
+                    <Grid Margin="0,0,0,4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="190" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Clear internal diameter" VerticalAlignment="Center"
+                                   Style="{StaticResource MetricLabelStyle}" />
+                        <layout:BarbetteDiameterInput Grid.Column="1"
+                                                      AutomationName="Barbette clear internal diameter"
+                                                      Value="{Binding SelectedBarbette.ClearDiameterMetres, Mode=TwoWay}" />
+                    </Grid>
+
+                    <Grid Margin="0,0,0,4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="190" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Requested clear internal depth" VerticalAlignment="Center"
+                                   Style="{StaticResource MetricLabelStyle}" />
+                        <ui:DimensionInput Grid.Column="1" Label="" Unit="m" SliderMinimum="1" SliderMaximum="30"
+                                           AutomationProperties.Name="Barbette clear internal depth"
+                                           Value="{Binding SelectedBarbette.ClearDepthMetres, Mode=TwoWay}" />
+                    </Grid>
+
+                    <Grid Margin="0,0,0,4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="190" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Top offset below reference deck" VerticalAlignment="Center"
+                                   Style="{StaticResource MetricLabelStyle}" />
+                        <ui:DimensionInput Grid.Column="1" Label="" Unit="m" SliderMinimum="0" SliderMaximum="30"
+                                           AutomationProperties.Name="Barbette top offset below reference deck"
+                                           Value="{Binding SelectedBarbette.TopOffsetMetres, Mode=TwoWay}" />
+                    </Grid>
+
+                    <Grid Margin="0,0,0,4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="190" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Neck clear size" VerticalAlignment="Center"
+                                   Style="{StaticResource MetricLabelStyle}" />
+                        <ComboBox Grid.Column="1" MinWidth="90" HorizontalAlignment="Left"
+                                  ItemsSource="{Binding SelectedBarbette.NeckClearSizeChoices}"
+                                  SelectedItem="{Binding SelectedBarbette.NeckClearSizeMetres, Mode=TwoWay}"
+                                  AutomationProperties.Name="Barbette neck clear size in metres" />
+                    </Grid>
+
+                    <TextBlock Text="Armor layers (innermost first, each 1 m)" Style="{StaticResource SectionHeadingStyle}"
+                               Margin="0,8,0,2" />
+                    <ItemsControl ItemsSource="{Binding SelectedBarbette.Stacks}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Rows="1" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="0,0,10,0">
+                                    <TextBlock Text="{Binding Header}" Style="{StaticResource MetricLabelStyle}" />
+                                    <ItemsControl ItemsSource="{Binding Layers}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <!-- Frozen 2.0 barbette armor is Solid only: there is deliberately no
+                                                     Construction control here. Ordinary hull armor keeps its own. -->
+                                                <ComboBox Margin="0,2,0,0"
+                                                          ItemsSource="{Binding MaterialChoices}"
+                                                          SelectedItem="{Binding MaterialChoice, Mode=TwoWay}"
+                                                          DisplayMemberPath="Label"
+                                                          AutomationProperties.Name="Barbette armor layer material" />
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                    <StackPanel Orientation="Horizontal" Margin="0,3,0,0">
+                                        <Button Style="{StaticResource CompactButtonStyle}" Content="Add layer"
+                                                Tag="{Binding Role}" Click="AddArmorLayerClicked"
+                                                AutomationProperties.Name="Add barbette armor layer" />
+                                        <Button Style="{StaticResource CompactButtonStyle}" Content="Remove layer"
+                                                Margin="4,0,0,0" Tag="{Binding Role}" Click="RemoveArmorLayerClicked"
+                                                AutomationProperties.Name="Remove barbette armor layer" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <TextBlock Text="Ruler readouts" Style="{StaticResource SectionHeadingStyle}" Margin="0,10,0,2" />
+                    <ItemsControl ItemsSource="{Binding Readouts}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" Style="{StaticResource MetricLabelStyle}"
+                                           TextWrapping="Wrap" Margin="0,1,0,0" />
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <TextBlock Text="Ruler placement diagnostics" Style="{StaticResource SectionHeadingStyle}"
+                               Margin="0,10,0,2" />
+                    <ItemsControl x:Name="DiagnosticList" ItemsSource="{Binding Diagnostics}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Text}" TextWrapping="Wrap" Margin="0,1,0,0">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock" BasedOn="{StaticResource MetricLabelStyle}">
+                                            <Setter Property="Foreground" Value="{DynamicResource WarningBrush}" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsBlocking}" Value="True">
+                                                    <Setter Property="Foreground" Value="{DynamicResource ErrorBrush}" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <!-- Resolved generation findings are a separate authority from the ruler's live
+                         placement diagnostics; the two are never merged into one list. -->
+                    <TextBlock Text="Resolved generation warnings" Style="{StaticResource SectionHeadingStyle}"
+                               Margin="0,10,0,2" />
+                    <ItemsControl x:Name="GenerationDiagnosticList" ItemsSource="{Binding GenerationDiagnostics}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Text}" TextWrapping="Wrap" Margin="0,1,0,0">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock" BasedOn="{StaticResource MetricLabelStyle}">
+                                            <Setter Property="Foreground" Value="{DynamicResource WarningBrush}" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsBlocking}" Value="True">
+                                                    <Setter Property="Foreground" Value="{DynamicResource ErrorBrush}" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

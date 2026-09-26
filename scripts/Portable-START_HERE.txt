@@ -1,0 +1,11 @@
+HULL FORGE - PORTABLE WINDOWS x64 PACKAGE
+
+1. Extract the entire ZIP to a folder on your PC. Do not run the app from inside the ZIP.
+2. Open the HullForge folder and double-click HullForge.exe. No .NET install is needed.
+3. Hull Forge reads the block catalog from your own From the Depths installation.
+   If it says NO GAME INSTALLATION, click Choose game folder and select the folder
+   that contains From_The_Depths.exe (or From The Depths.exe).
+4. Design a hull and use Export to save a .blueprint. Choose a destination you can find.
+
+Keep all files in the HullForge folder together. This package does not include the game.
+It is unsigned; some Windows security settings may warn about or block its first run.

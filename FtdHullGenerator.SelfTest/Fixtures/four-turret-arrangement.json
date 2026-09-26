@@ -1,0 +1,123 @@
+{
+  "exampleSchemaVersion": 1,
+  "purpose": "Solver fixture proposal; not an importable application project until F01/F03 implement its adapter.",
+  "units": "metres",
+  "rulerDirection": "bow_to_stern",
+  "coordinates": {
+    "layoutBowZ": 159.5,
+    "centerPlaneX": 10.0,
+    "worldZFromRuler": "layoutBowZ - s"
+  },
+  "supportedRulerInterval": [
+    0,
+    160
+  ],
+  "anchor": {
+    "nodeId": "A",
+    "edge": "forward",
+    "rulerPosition": 10
+  },
+  "namedGaps": {
+    "gun-pair-gap": {
+      "kind": "ClearEdgeGap",
+      "value": 5
+    },
+    "structure-clearance": {
+      "kind": "ClearEdgeGap",
+      "value": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "A",
+      "kind": "barbette",
+      "realizedLongitudinalFootprint": 13
+    },
+    {
+      "id": "B",
+      "kind": "barbette",
+      "realizedLongitudinalFootprint": 13
+    },
+    {
+      "id": "superstructure",
+      "kind": "superstructure",
+      "realizedLongitudinalFootprint": 30,
+      "children": [
+        {
+          "id": "structure-root",
+          "localRulerOffsetFromForwardEdge": 15
+        },
+        {
+          "id": "tower-root",
+          "localRulerOffsetFromForwardEdge": 19
+        }
+      ]
+    },
+    {
+      "id": "X",
+      "kind": "barbette",
+      "realizedLongitudinalFootprint": 13
+    },
+    {
+      "id": "Y",
+      "kind": "barbette",
+      "realizedLongitudinalFootprint": 13
+    }
+  ],
+  "gaps": [
+    {
+      "from": "A",
+      "to": "B",
+      "parameter": "gun-pair-gap"
+    },
+    {
+      "from": "B",
+      "to": "superstructure",
+      "parameter": "structure-clearance"
+    },
+    {
+      "from": "superstructure",
+      "to": "X",
+      "parameter": "structure-clearance"
+    },
+    {
+      "from": "X",
+      "to": "Y",
+      "parameter": "gun-pair-gap"
+    }
+  ],
+  "expected": {
+    "intervals": {
+      "A": [
+        10,
+        23
+      ],
+      "B": [
+        28,
+        41
+      ],
+      "superstructure": [
+        53,
+        83
+      ],
+      "X": [
+        95,
+        108
+      ],
+      "Y": [
+        113,
+        126
+      ]
+    },
+    "barbetteWorldZCenters": {
+      "A": 143,
+      "B": 125,
+      "X": 58,
+      "Y": 40
+    },
+    "structureRootRulerPosition": 68,
+    "towerRootRulerPosition": 72,
+    "aftUnusedSpace": 34
+  },
+  "important": "The 13 m footprints are measured inputs. A production solver must ask the actual rasterizer for them rather than infer them from an arbitrary nominal diameter."
+}

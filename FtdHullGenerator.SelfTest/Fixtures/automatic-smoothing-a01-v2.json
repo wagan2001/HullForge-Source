@@ -1,0 +1,959 @@
+{
+  "schemaVersion": 1,
+  "corpusId": "hull-forge-a01-common-base-v2",
+  "hybridOffset": 3,
+  "catalog": {
+    "scope": "Installed unmodified Core_Structural catalog; every exporter-effective Metal key used by this corpus (retained native shape, otherwise Cube) must resolve without fallback.",
+    "gameVersion": "4.3.4.0",
+    "requiredResolutionSha256": "1527e26c1045a4ddc092e8785876fada5e24f0a731f71b98dd31a7b25a943aba"
+  },
+  "methods": [
+    {
+      "name": "None",
+      "value": 0
+    },
+    {
+      "name": "VerticalSlopeFill",
+      "value": 1
+    },
+    {
+      "name": "HorizontalSlopeFill",
+      "value": 2
+    },
+    {
+      "name": "HybridSlopeFill",
+      "value": 5
+    },
+    {
+      "name": "CombinedSlopeFill",
+      "value": 4
+    }
+  ],
+  "hardChecks": [
+    {
+      "id": "hard.geometry-validator",
+      "unit": "failures",
+      "aggregation": "zero failures for every case/method"
+    },
+    {
+      "id": "hard.common-base",
+      "unit": "sha256",
+      "aggregation": "exact beam-normalized equality to the case\u0027s None base for every method"
+    },
+    {
+      "id": "hard.no-base-overlap",
+      "unit": "overlapping cells",
+      "aggregation": "zero for every case/method"
+    },
+    {
+      "id": "hard.bounds-unchanged",
+      "unit": "axis extents",
+      "aggregation": "all six bounds equal the case\u0027s None base"
+    },
+    {
+      "id": "hard.mirror-and-connectivity",
+      "unit": "failures",
+      "aggregation": "zero HullGeometryValidator failures for every case/method"
+    },
+    {
+      "id": "hard.catalog-resolution",
+      "unit": "fallbacks",
+      "aggregation": "zero for every export-native shape under the frozen catalog snapshot"
+    },
+    {
+      "id": "hard.native-output-identity",
+      "unit": "sha256",
+      "aggregation": "exact sorted native smoothing-placement fingerprint per case/method"
+    }
+  ],
+  "appearanceMetrics": [
+    {
+      "id": "appearance.target-surface-deviation",
+      "unit": "m",
+      "perCaseAggregation": "mean absolute normal distance plus separately reported maximum over a fixed 0.25 m target-surface sample grid",
+      "suiteAggregation": "development and holdout reported separately as median of case means plus maximum of case maxima",
+      "authoritative": false,
+      "gateRole": "advisory",
+      "definition": "Distance from each sampled intended exterior hull point to the nearest export-effective candidate exterior face; interior armor and the open-deck aperture are excluded. No score is recorded in A01 because the analytic target sampler is not yet exposed to the evidence surface."
+    },
+    {
+      "id": "appearance.uncovered-intended-surface",
+      "unit": "m^2",
+      "perCaseAggregation": "sum of fixed target-surface tessellation area lacking an export-effective candidate face within 0.125 m normal distance",
+      "suiteAggregation": "development and holdout reported separately as total uncovered m^2 and area-weighted uncovered fraction",
+      "authoritative": false,
+      "gateRole": "advisory",
+      "definition": "Intended exterior target area not covered by the candidate; required openings and deliberately un-decked regions are excluded by the same mask for every method. A01 records the definition before A02 implements the sampler."
+    },
+    {
+      "id": "appearance.patch-boundary-discontinuity",
+      "unit": "m",
+      "perCaseAggregation": "maximum and p95 absolute face-edge separation across every declared patch boundary, with method transitions counted and hull ends excluded",
+      "suiteAggregation": "development and holdout reported separately as maximum case maximum and median case p95",
+      "authoritative": false,
+      "gateRole": "advisory",
+      "definition": "Export-effective physical face separation at a smoothing-patch seam. Occupied-cell adjacency alone is insufficient; A01 leaves values unscored until A02 supplies explicit patch provenance and boundary signatures."
+    },
+    {
+      "id": "appearance.unnecessary-fragmentation",
+      "unit": "native smoothing placements per 100 m^2",
+      "perCaseAggregation": "native smoothing placement count divided by baseline exterior hull-skin area and multiplied by 100; also report raw count and orientation-switch count",
+      "suiteAggregation": "development and holdout reported separately as median density, maximum density, and total raw placements",
+      "authoritative": false,
+      "gateRole": "advisory",
+      "definition": "Counts native smoothing placements without decomposing slope length or handed families. Straight shell beams are normalized to occupied one-metre cells only for base equality, never for this metric."
+    }
+  ],
+  "decisionRule": "lexicographic: reject any hard-check failure; then compare target deviation and uncovered area; then patch-boundary discontinuity; then fragmentation. Never trade a hard failure for an appearance improvement and never combine these into a weighted score.",
+  "renders": {
+    "canvasWidth": 1000,
+    "canvasHeight": 700,
+    "views": [
+      "Side",
+      "Top",
+      "Bow",
+      "Isometric"
+    ],
+    "crops": [
+      {
+        "id": "side-stern-seam",
+        "sourceView": "Side",
+        "x": 80,
+        "y": 170,
+        "width": 320,
+        "height": 360
+      },
+      {
+        "id": "side-bow-seam",
+        "sourceView": "Side",
+        "x": 600,
+        "y": 170,
+        "width": 320,
+        "height": 360
+      },
+      {
+        "id": "bow-section-seam",
+        "sourceView": "Bow",
+        "x": 210,
+        "y": 100,
+        "width": 580,
+        "height": 500
+      }
+    ]
+  },
+  "holdoutCaseIds": [
+    "review-deep-v-long-entrance",
+    "review-raised-sheer-tumblehome",
+    "small-even-raised-transitions",
+    "large-raised-deep-v"
+  ],
+  "cases": [
+    {
+      "id": "review-rounded-flared",
+      "split": "development",
+      "tags": [
+        "shape-v2-review",
+        "medium"
+      ],
+      "render": true,
+      "length": 96,
+      "width": 25,
+      "height": 15,
+      "bowStyle": "Pointed",
+      "sternStyle": "Transom",
+      "bow": {
+        "fullness": 0.25,
+        "flare": 0.55,
+        "entranceLengthPercent": 42
+      },
+      "body": {
+        "style": "Rounded",
+        "fullness": 0.35,
+        "sideShape": 0.40,
+        "chine": -0.65,
+        "flatBottom": 0.0
+      },
+      "stern": {
+        "fullness": 0.10,
+        "sideShape": 0.15,
+        "runLengthPercent": 28
+      },
+      "profile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "beamify": true,
+      "hybridOffset": 3
+    },
+    {
+      "id": "review-deep-v-long-entrance",
+      "split": "holdout",
+      "tags": [
+        "shape-v2-review",
+        "long-run",
+        "deep-v"
+      ],
+      "render": true,
+      "length": 112,
+      "width": 23,
+      "height": 18,
+      "bowStyle": "Raked",
+      "sternStyle": "Canoe",
+      "bow": {
+        "fullness": -0.60,
+        "flare": 0.70,
+        "entranceLengthPercent": 70
+      },
+      "body": {
+        "style": "DeepV",
+        "fullness": -0.60,
+        "sideShape": 0.30,
+        "chine": -0.10,
+        "flatBottom": 0.0
+      },
+      "stern": {
+        "fullness": -0.30,
+        "sideShape": 0.20,
+        "runLengthPercent": 42
+      },
+      "profile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "beamify": true,
+      "hybridOffset": 3
+    },
+    {
+      "id": "review-flat-wide-short-ends",
+      "split": "development",
+      "tags": [
+        "shape-v2-review",
+        "flat-wide-no-op",
+        "short-transition",
+        "right-angle-floor"
+      ],
+      "render": true,
+      "length": 72,
+      "width": 35,
+      "height": 12,
+      "bowStyle": "Blunt",
+      "sternStyle": "Square",
+      "bow": {
+        "fullness": 0.55,
+        "flare": -0.15,
+        "entranceLengthPercent": 15
+      },
+      "body": {
+        "style": "FlatWide",
+        "fullness": 0.85,
+        "sideShape": 0.05,
+        "chine": 0.45,
+        "flatBottom": 1.0
+      },
+      "stern": {
+        "fullness": 0.65,
+        "sideShape": 0.10,
+        "runLengthPercent": 12
+      },
+      "profile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "beamify": true,
+      "hybridOffset": 3,
+      "flatNoOpMethod": "CrossSectionSlopeFill"
+    },
+    {
+      "id": "review-raised-sheer-tumblehome",
+      "split": "holdout",
+      "tags": [
+        "shape-v2-review",
+        "raised-profile",
+        "bulb",
+        "tumblehome"
+      ],
+      "render": true,
+      "length": 84,
+      "width": 31,
+      "height": 24,
+      "bowStyle": "Spoon",
+      "sternStyle": "Counter",
+      "bow": {
+        "fullness": 0.20,
+        "flare": -0.25,
+        "entranceLengthPercent": 38
+      },
+      "body": {
+        "style": "Tumblehome",
+        "fullness": 0.55,
+        "sideShape": -0.70,
+        "chine": -0.35,
+        "flatBottom": 0.0
+      },
+      "stern": {
+        "fullness": 0.25,
+        "sideShape": -0.55,
+        "runLengthPercent": 35
+      },
+      "profile": {
+        "bowDeckRise": 6,
+        "sternDeckRise": 4,
+        "bowKeelRise": 5,
+        "sternKeelRise": 3
+      },
+      "hasBulb": true,
+      "beamify": true,
+      "hybridOffset": 3
+    },
+    {
+      "id": "small-odd-short-transitions",
+      "split": "development",
+      "tags": [
+        "small",
+        "odd-width",
+        "short-transition"
+      ],
+      "render": true,
+      "length": 28,
+      "width": 9,
+      "height": 7,
+      "bowStyle": "Pointed",
+      "sternStyle": "Transom",
+      "bow": {
+        "fullness": 0.15,
+        "flare": 0.35,
+        "entranceLengthPercent": 12
+      },
+      "body": {
+        "style": "Rounded",
+        "fullness": 0.25,
+        "sideShape": 0.20,
+        "chine": -0.55,
+        "flatBottom": 0.0
+      },
+      "stern": {
+        "fullness": 0.10,
+        "sideShape": 0.10,
+        "runLengthPercent": 12
+      },
+      "profile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "beamify": true,
+      "hybridOffset": 3
+    },
+    {
+      "id": "small-even-raised-transitions",
+      "split": "holdout",
+      "tags": [
+        "small",
+        "even-width",
+        "short-transition",
+        "raised-profile"
+      ],
+      "render": true,
+      "length": 32,
+      "width": 14,
+      "height": 9,
+      "bowStyle": "Raked",
+      "sternStyle": "Canoe",
+      "bow": {
+        "fullness": -0.20,
+        "flare": 0.40,
+        "entranceLengthPercent": 15
+      },
+      "body": {
+        "style": "V",
+        "fullness": -0.10,
+        "sideShape": 0.10,
+        "chine": -0.35,
+        "flatBottom": 0.0
+      },
+      "stern": {
+        "fullness": -0.10,
+        "sideShape": 0.15,
+        "runLengthPercent": 15
+      },
+      "profile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 2,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "beamify": true,
+      "hybridOffset": 3
+    },
+    {
+      "id": "large-rounded-long-runs",
+      "split": "development",
+      "tags": [
+        "large",
+        "long-run",
+        "gentle-run"
+      ],
+      "render": true,
+      "length": 160,
+      "width": 41,
+      "height": 22,
+      "bowStyle": "Pointed",
+      "sternStyle": "Canoe",
+      "bow": {
+        "fullness": 0.10,
+        "flare": 0.20,
+        "entranceLengthPercent": 65
+      },
+      "body": {
+        "style": "Rounded",
+        "fullness": 0.35,
+        "sideShape": 0.10,
+        "chine": -0.65,
+        "flatBottom": 0.0
+      },
+      "stern": {
+        "fullness": 0.05,
+        "sideShape": 0.10,
+        "runLengthPercent": 60
+      },
+      "profile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "beamify": true,
+      "hybridOffset": 3
+    },
+    {
+      "id": "large-raised-deep-v",
+      "split": "holdout",
+      "tags": [
+        "large",
+        "long-run",
+        "raised-profile",
+        "deep-v",
+        "bulb"
+      ],
+      "render": true,
+      "length": 180,
+      "width": 39,
+      "height": 26,
+      "bowStyle": "Spoon",
+      "sternStyle": "Counter",
+      "bow": {
+        "fullness": -0.35,
+        "flare": 0.45,
+        "entranceLengthPercent": 68
+      },
+      "body": {
+        "style": "DeepV",
+        "fullness": -0.55,
+        "sideShape": 0.20,
+        "chine": -0.15,
+        "flatBottom": 0.0
+      },
+      "stern": {
+        "fullness": -0.20,
+        "sideShape": 0.10,
+        "runLengthPercent": 58
+      },
+      "profile": {
+        "bowDeckRise": 5,
+        "sternDeckRise": 3,
+        "bowKeelRise": 4,
+        "sternKeelRise": 2
+      },
+      "hasBulb": true,
+      "beamify": true,
+      "hybridOffset": 3
+    }
+  ],
+  "results": [
+    {
+      "caseId": "review-rounded-flared",
+      "method": "None",
+      "baseNormalizedSha256": "e6b241161e02523218bf520f4590797ec907f055487daf7754fe8252c1da6e4b",
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "basePlacementCount": 1394,
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 4670
+    },
+    {
+      "caseId": "review-rounded-flared",
+      "method": "VerticalSlopeFill",
+      "baseNormalizedSha256": "e6b241161e02523218bf520f4590797ec907f055487daf7754fe8252c1da6e4b",
+      "smoothingNativeSha256": "6d2cbb0f4a09e200faacbfeee1921c50378c69da687e465319af677977ec0fd8",
+      "basePlacementCount": 1394,
+      "smoothingPlacementCount": 238,
+      "occupiedCellCount": 5224
+    },
+    {
+      "caseId": "review-rounded-flared",
+      "method": "HorizontalSlopeFill",
+      "baseNormalizedSha256": "e6b241161e02523218bf520f4590797ec907f055487daf7754fe8252c1da6e4b",
+      "smoothingNativeSha256": "11bff32907b363874fb71a0a049a4c82f45b3232b187ece7fc70fff4363922c6",
+      "basePlacementCount": 1394,
+      "smoothingPlacementCount": 320,
+      "occupiedCellCount": 5734
+    },
+    {
+      "caseId": "review-rounded-flared",
+      "method": "HybridSlopeFill",
+      "baseNormalizedSha256": "e6b241161e02523218bf520f4590797ec907f055487daf7754fe8252c1da6e4b",
+      "smoothingNativeSha256": "cb6056558bd805142b0499480ded1a8e6248f153fa6e38180f5c18cbbcd637cc",
+      "basePlacementCount": 1394,
+      "smoothingPlacementCount": 280,
+      "occupiedCellCount": 5402
+    },
+    {
+      "caseId": "review-rounded-flared",
+      "method": "CombinedSlopeFill",
+      "baseNormalizedSha256": "e6b241161e02523218bf520f4590797ec907f055487daf7754fe8252c1da6e4b",
+      "smoothingNativeSha256": "b7670bab4e82d81638f9410023c3c24ec5b51c787cd88736ba4a6ff557071a5c",
+      "basePlacementCount": 1394,
+      "smoothingPlacementCount": 410,
+      "occupiedCellCount": 5886
+    },
+    {
+      "caseId": "review-deep-v-long-entrance",
+      "method": "None",
+      "baseNormalizedSha256": "c12b07f08955f0792d1cd4d92076a9f659c3b87cc93ee9ae0925b37c4f74c1f5",
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "basePlacementCount": 1178,
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 4007
+    },
+    {
+      "caseId": "review-deep-v-long-entrance",
+      "method": "VerticalSlopeFill",
+      "baseNormalizedSha256": "c12b07f08955f0792d1cd4d92076a9f659c3b87cc93ee9ae0925b37c4f74c1f5",
+      "smoothingNativeSha256": "b79726291a1480dc87ddcc6d5894ac1fc78928f95efb9934cba9b6cd24e9b3d5",
+      "basePlacementCount": 1178,
+      "smoothingPlacementCount": 408,
+      "occupiedCellCount": 4801
+    },
+    {
+      "caseId": "review-deep-v-long-entrance",
+      "method": "HorizontalSlopeFill",
+      "baseNormalizedSha256": "c12b07f08955f0792d1cd4d92076a9f659c3b87cc93ee9ae0925b37c4f74c1f5",
+      "smoothingNativeSha256": "4705ddb4a40b076678c562b523959cd8f46d3199edad878142c546b424db7009",
+      "basePlacementCount": 1178,
+      "smoothingPlacementCount": 390,
+      "occupiedCellCount": 5357
+    },
+    {
+      "caseId": "review-deep-v-long-entrance",
+      "method": "HybridSlopeFill",
+      "baseNormalizedSha256": "c12b07f08955f0792d1cd4d92076a9f659c3b87cc93ee9ae0925b37c4f74c1f5",
+      "smoothingNativeSha256": "48cc14395ca3150aaf16910820ec5f1b6cb06c083f479d31ce1e014a6b9610c6",
+      "basePlacementCount": 1178,
+      "smoothingPlacementCount": 438,
+      "occupiedCellCount": 5053
+    },
+    {
+      "caseId": "review-deep-v-long-entrance",
+      "method": "CombinedSlopeFill",
+      "baseNormalizedSha256": "c12b07f08955f0792d1cd4d92076a9f659c3b87cc93ee9ae0925b37c4f74c1f5",
+      "smoothingNativeSha256": "2b1e5c5f179b857a4e502b27be66b16c34671f07c36269f9c7051c3b47d8b4a6",
+      "basePlacementCount": 1178,
+      "smoothingPlacementCount": 614,
+      "occupiedCellCount": 5777
+    },
+    {
+      "caseId": "review-flat-wide-short-ends",
+      "method": "None",
+      "baseNormalizedSha256": "b048512524feff42b9923cd3eb32f57a6dd5b8ac4bc2ee1bbb8e3d106209b671",
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "basePlacementCount": 2182,
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 6692
+    },
+    {
+      "caseId": "review-flat-wide-short-ends",
+      "method": "VerticalSlopeFill",
+      "baseNormalizedSha256": "b048512524feff42b9923cd3eb32f57a6dd5b8ac4bc2ee1bbb8e3d106209b671",
+      "smoothingNativeSha256": "11296d71b365ff86350e438cb2b02325837fc02b1026cacf0a02f069e8dbaf19",
+      "basePlacementCount": 2182,
+      "smoothingPlacementCount": 30,
+      "occupiedCellCount": 6800
+    },
+    {
+      "caseId": "review-flat-wide-short-ends",
+      "method": "HorizontalSlopeFill",
+      "baseNormalizedSha256": "b048512524feff42b9923cd3eb32f57a6dd5b8ac4bc2ee1bbb8e3d106209b671",
+      "smoothingNativeSha256": "35d96b619808b3ee42c3848abecc7af8fcf46968b6138607de52b90e93f0c1d2",
+      "basePlacementCount": 2182,
+      "smoothingPlacementCount": 238,
+      "occupiedCellCount": 7028
+    },
+    {
+      "caseId": "review-flat-wide-short-ends",
+      "method": "HybridSlopeFill",
+      "baseNormalizedSha256": "b048512524feff42b9923cd3eb32f57a6dd5b8ac4bc2ee1bbb8e3d106209b671",
+      "smoothingNativeSha256": "d2b152ed318438446b488593efba30e90679867d51e54f24d72c907df527d1b1",
+      "basePlacementCount": 2182,
+      "smoothingPlacementCount": 62,
+      "occupiedCellCount": 6792
+    },
+    {
+      "caseId": "review-flat-wide-short-ends",
+      "method": "CombinedSlopeFill",
+      "baseNormalizedSha256": "b048512524feff42b9923cd3eb32f57a6dd5b8ac4bc2ee1bbb8e3d106209b671",
+      "smoothingNativeSha256": "a58d0bbcf2e097fc5f7b69b025b4e825dc8ce9418e0b016e39aeb06abb64e384",
+      "basePlacementCount": 2182,
+      "smoothingPlacementCount": 188,
+      "occupiedCellCount": 7024
+    },
+    {
+      "caseId": "review-raised-sheer-tumblehome",
+      "method": "None",
+      "baseNormalizedSha256": "2d24df142295664afc87ae223e8ab3511f504ea7d612c97c6b4e574152fbe874",
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "basePlacementCount": 2609,
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 6791
+    },
+    {
+      "caseId": "review-raised-sheer-tumblehome",
+      "method": "VerticalSlopeFill",
+      "baseNormalizedSha256": "2d24df142295664afc87ae223e8ab3511f504ea7d612c97c6b4e574152fbe874",
+      "smoothingNativeSha256": "51d103bc68d415a9fbbdc96281321de74c9de8b3f948eb6a83e4aa303e381b4a",
+      "basePlacementCount": 2609,
+      "smoothingPlacementCount": 826,
+      "occupiedCellCount": 8463
+    },
+    {
+      "caseId": "review-raised-sheer-tumblehome",
+      "method": "HorizontalSlopeFill",
+      "baseNormalizedSha256": "2d24df142295664afc87ae223e8ab3511f504ea7d612c97c6b4e574152fbe874",
+      "smoothingNativeSha256": "59b4e806f10775abb58b7bcd7a4c11b4e63f76a1dcb5f5bc5f886101cfbfe89f",
+      "basePlacementCount": 2609,
+      "smoothingPlacementCount": 760,
+      "occupiedCellCount": 8515
+    },
+    {
+      "caseId": "review-raised-sheer-tumblehome",
+      "method": "HybridSlopeFill",
+      "baseNormalizedSha256": "2d24df142295664afc87ae223e8ab3511f504ea7d612c97c6b4e574152fbe874",
+      "smoothingNativeSha256": "f9453eacf7603f9a243535cbd2843dd1c6c6619da21c14ec7d9a062143026b7b",
+      "basePlacementCount": 2609,
+      "smoothingPlacementCount": 799,
+      "occupiedCellCount": 8305
+    },
+    {
+      "caseId": "review-raised-sheer-tumblehome",
+      "method": "CombinedSlopeFill",
+      "baseNormalizedSha256": "2d24df142295664afc87ae223e8ab3511f504ea7d612c97c6b4e574152fbe874",
+      "smoothingNativeSha256": "67afc5bd8b0bd23589b1a1e14cb528b201695be399450bb726fd7b1717cc5522",
+      "basePlacementCount": 2609,
+      "smoothingPlacementCount": 1222,
+      "occupiedCellCount": 9761
+    },
+    {
+      "caseId": "small-odd-short-transitions",
+      "method": "None",
+      "baseNormalizedSha256": "84bf0c397c422b22b293b1864cfce152a6432ad44d3b309c4ba663128e986afb",
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "basePlacementCount": 179,
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 557
+    },
+    {
+      "caseId": "small-odd-short-transitions",
+      "method": "VerticalSlopeFill",
+      "baseNormalizedSha256": "84bf0c397c422b22b293b1864cfce152a6432ad44d3b309c4ba663128e986afb",
+      "smoothingNativeSha256": "c7bc10b1273054c345b03b866f66d4430eceb07d8cfd7a69accd79c26b145121",
+      "basePlacementCount": 179,
+      "smoothingPlacementCount": 24,
+      "occupiedCellCount": 611
+    },
+    {
+      "caseId": "small-odd-short-transitions",
+      "method": "HorizontalSlopeFill",
+      "baseNormalizedSha256": "84bf0c397c422b22b293b1864cfce152a6432ad44d3b309c4ba663128e986afb",
+      "smoothingNativeSha256": "96f13322a8bc73017bf196428b3fe87425fdff110bd507c9f6ab98a00d4731fa",
+      "basePlacementCount": 179,
+      "smoothingPlacementCount": 36,
+      "occupiedCellCount": 603
+    },
+    {
+      "caseId": "small-odd-short-transitions",
+      "method": "HybridSlopeFill",
+      "baseNormalizedSha256": "84bf0c397c422b22b293b1864cfce152a6432ad44d3b309c4ba663128e986afb",
+      "smoothingNativeSha256": "578260689068ea55a95538dffcd53b4deadec8d222e65abbc8af247661e349fb",
+      "basePlacementCount": 179,
+      "smoothingPlacementCount": 30,
+      "occupiedCellCount": 593
+    },
+    {
+      "caseId": "small-odd-short-transitions",
+      "method": "CombinedSlopeFill",
+      "baseNormalizedSha256": "84bf0c397c422b22b293b1864cfce152a6432ad44d3b309c4ba663128e986afb",
+      "smoothingNativeSha256": "58bba5169bf3aeb28f40b38e79a510808135074b3e92e1285fe7034472eb3f70",
+      "basePlacementCount": 179,
+      "smoothingPlacementCount": 24,
+      "occupiedCellCount": 621
+    },
+    {
+      "caseId": "small-even-raised-transitions",
+      "method": "None",
+      "baseNormalizedSha256": "37246487cadabd8d1c93f0eb2d00e01bf6c79a12732b2a912bee71fe11847d0c",
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "basePlacementCount": 352,
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 976
+    },
+    {
+      "caseId": "small-even-raised-transitions",
+      "method": "VerticalSlopeFill",
+      "baseNormalizedSha256": "37246487cadabd8d1c93f0eb2d00e01bf6c79a12732b2a912bee71fe11847d0c",
+      "smoothingNativeSha256": "b7854d7fe932b2a77842cbaa63022fe94aee18708b20c15aea4815b664b8f48f",
+      "basePlacementCount": 352,
+      "smoothingPlacementCount": 72,
+      "occupiedCellCount": 1150
+    },
+    {
+      "caseId": "small-even-raised-transitions",
+      "method": "HorizontalSlopeFill",
+      "baseNormalizedSha256": "37246487cadabd8d1c93f0eb2d00e01bf6c79a12732b2a912bee71fe11847d0c",
+      "smoothingNativeSha256": "e1f1faeb0aecd513454c1cb89dbe87d5f600a6e7fcf7a47d97f18265130eb488",
+      "basePlacementCount": 352,
+      "smoothingPlacementCount": 50,
+      "occupiedCellCount": 1050
+    },
+    {
+      "caseId": "small-even-raised-transitions",
+      "method": "HybridSlopeFill",
+      "baseNormalizedSha256": "37246487cadabd8d1c93f0eb2d00e01bf6c79a12732b2a912bee71fe11847d0c",
+      "smoothingNativeSha256": "3d4cc9bd161541bf242b11ecbc9cd1c3bea33183ab789527da95dd82e79aaf4e",
+      "basePlacementCount": 352,
+      "smoothingPlacementCount": 62,
+      "occupiedCellCount": 1092
+    },
+    {
+      "caseId": "small-even-raised-transitions",
+      "method": "CombinedSlopeFill",
+      "baseNormalizedSha256": "37246487cadabd8d1c93f0eb2d00e01bf6c79a12732b2a912bee71fe11847d0c",
+      "smoothingNativeSha256": "1045865ce2d617cc69c8d258d6dc69ba3386411b787f6fe5f578de2a428b722b",
+      "basePlacementCount": 352,
+      "smoothingPlacementCount": 124,
+      "occupiedCellCount": 1266
+    },
+    {
+      "caseId": "large-rounded-long-runs",
+      "method": "None",
+      "baseNormalizedSha256": "8a7b6b1fc3116e0ea02b254cc76eec3303f77c05e5a89c6762765f3fe6737f12",
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "basePlacementCount": 3148,
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 10969
+    },
+    {
+      "caseId": "large-rounded-long-runs",
+      "method": "VerticalSlopeFill",
+      "baseNormalizedSha256": "8a7b6b1fc3116e0ea02b254cc76eec3303f77c05e5a89c6762765f3fe6737f12",
+      "smoothingNativeSha256": "d6f4933961837697f24b6cacbfdd0e814fb1406f4fb95162cda5ea0ae997994d",
+      "basePlacementCount": 3148,
+      "smoothingPlacementCount": 1010,
+      "occupiedCellCount": 13098
+    },
+    {
+      "caseId": "large-rounded-long-runs",
+      "method": "HorizontalSlopeFill",
+      "baseNormalizedSha256": "8a7b6b1fc3116e0ea02b254cc76eec3303f77c05e5a89c6762765f3fe6737f12",
+      "smoothingNativeSha256": "6ffe47b9a968ddc2f80487d1a0d550d989434b4d374b341fe5879d7224d8cdc1",
+      "basePlacementCount": 3148,
+      "smoothingPlacementCount": 966,
+      "occupiedCellCount": 14149
+    },
+    {
+      "caseId": "large-rounded-long-runs",
+      "method": "HybridSlopeFill",
+      "baseNormalizedSha256": "8a7b6b1fc3116e0ea02b254cc76eec3303f77c05e5a89c6762765f3fe6737f12",
+      "smoothingNativeSha256": "e5445e2c533cd0352d8080075fcc66423aebc177cfb6d27219c2ed9164897f9d",
+      "basePlacementCount": 3148,
+      "smoothingPlacementCount": 1059,
+      "occupiedCellCount": 13433
+    },
+    {
+      "caseId": "large-rounded-long-runs",
+      "method": "CombinedSlopeFill",
+      "baseNormalizedSha256": "8a7b6b1fc3116e0ea02b254cc76eec3303f77c05e5a89c6762765f3fe6737f12",
+      "smoothingNativeSha256": "c3faa2ec320c73ccc06d47d8de2d5780273fb549232b75484847f26494f64ffe",
+      "basePlacementCount": 3148,
+      "smoothingPlacementCount": 1214,
+      "occupiedCellCount": 14430
+    },
+    {
+      "caseId": "large-raised-deep-v",
+      "method": "None",
+      "baseNormalizedSha256": "7e3b1e83e2aa258f808463faef40d7b7ec6c77f23a6e3fa1f2dbee8e9261aede",
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "basePlacementCount": 4573,
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 14455
+    },
+    {
+      "caseId": "large-raised-deep-v",
+      "method": "VerticalSlopeFill",
+      "baseNormalizedSha256": "7e3b1e83e2aa258f808463faef40d7b7ec6c77f23a6e3fa1f2dbee8e9261aede",
+      "smoothingNativeSha256": "b6217f732d61e14d49889690369319c0a4737405a8f3a3e0a9945d25ffb6a015",
+      "basePlacementCount": 4573,
+      "smoothingPlacementCount": 1220,
+      "occupiedCellCount": 17714
+    },
+    {
+      "caseId": "large-raised-deep-v",
+      "method": "HorizontalSlopeFill",
+      "baseNormalizedSha256": "7e3b1e83e2aa258f808463faef40d7b7ec6c77f23a6e3fa1f2dbee8e9261aede",
+      "smoothingNativeSha256": "0c4802c927d12fced08df8fff33c32f9fcd1e0e453ffc069bf5d8760c9ded0d4",
+      "basePlacementCount": 4573,
+      "smoothingPlacementCount": 1320,
+      "occupiedCellCount": 18599
+    },
+    {
+      "caseId": "large-raised-deep-v",
+      "method": "HybridSlopeFill",
+      "baseNormalizedSha256": "7e3b1e83e2aa258f808463faef40d7b7ec6c77f23a6e3fa1f2dbee8e9261aede",
+      "smoothingNativeSha256": "49e04f53de193c52bd62afdb42cfa8f569b38bd76594e678fd330048e1e84a37",
+      "basePlacementCount": 4573,
+      "smoothingPlacementCount": 1183,
+      "occupiedCellCount": 17608
+    },
+    {
+      "caseId": "large-raised-deep-v",
+      "method": "CombinedSlopeFill",
+      "baseNormalizedSha256": "7e3b1e83e2aa258f808463faef40d7b7ec6c77f23a6e3fa1f2dbee8e9261aede",
+      "smoothingNativeSha256": "167c9d88369ed935d3b058c5b6a41a83ffd5f8fecfe7e91f5cb9974d20873993",
+      "basePlacementCount": 4573,
+      "smoothingPlacementCount": 1768,
+      "occupiedCellCount": 19800
+    }
+  ],
+  "supersedes": {
+    "corpusId": "hull-forge-a01-common-base-v1",
+    "fixtureSha256": "02cc4c289f1120ffd551dec8ed995fca9649d535d30d623e1951d86f5890828e",
+    "defect": "Shape V2 HorizontalSlopeFillPass.CollectCandidates -\u003E AddInternalRuns accepted an internal longitudinal return whenever the inboard/lower support rule held. A row\u0027s hollow interior is a longitudinal gap with the same support as a genuine surface notch, so MinZ/MaxZ could not tell them apart and native slopes were placed inside the protected cavity. Those placements are physical (BlockOrigin.Smoothing, present in the final hull.Blocks list preview and export consume), not Deco/preview-only.",
+    "classifierPredicate": "Every occupied cell of a Shape V2 internal-return candidate must satisfy HullGenerator.CreateContext(parameters).RoleAt(x,y,z) == HullCellRole.Outside (the original analytic solid \u002B armor intent \u002B deck-interior state). Cavity, structural armor roles and ReservedArmorAir are rejected. The bow/stern contour runs and the transom wedge are not guarded.",
+    "changedRows": [
+      {
+        "caseId": "review-rounded-flared",
+        "method": "HorizontalSlopeFill",
+        "oldSmoothingPlacementCount": 436,
+        "newSmoothingPlacementCount": 320,
+        "oldSmoothingNativeSha256": "57d4d6ecee3cd60126a98b670702741ff996d0475aa0777ffcbd036653f79759",
+        "newSmoothingNativeSha256": "11bff32907b363874fb71a0a049a4c82f45b3232b187ece7fc70fff4363922c6"
+      },
+      {
+        "caseId": "review-rounded-flared",
+        "method": "HybridSlopeFill",
+        "oldSmoothingPlacementCount": 288,
+        "newSmoothingPlacementCount": 280,
+        "oldSmoothingNativeSha256": "950949d301a3eec47d22e6f10c4a53dcaa952009e605fb44865e37adc4d55961",
+        "newSmoothingNativeSha256": "cb6056558bd805142b0499480ded1a8e6248f153fa6e38180f5c18cbbcd637cc"
+      },
+      {
+        "caseId": "review-deep-v-long-entrance",
+        "method": "HorizontalSlopeFill",
+        "oldSmoothingPlacementCount": 544,
+        "newSmoothingPlacementCount": 390,
+        "oldSmoothingNativeSha256": "2bf5dc47a476a4cf617e4417fd44617fa8d5f808c7bd2871a6bc80ae291172d6",
+        "newSmoothingNativeSha256": "4705ddb4a40b076678c562b523959cd8f46d3199edad878142c546b424db7009"
+      },
+      {
+        "caseId": "review-deep-v-long-entrance",
+        "method": "HybridSlopeFill",
+        "oldSmoothingPlacementCount": 454,
+        "newSmoothingPlacementCount": 438,
+        "oldSmoothingNativeSha256": "995495da4fe1e25d90221b0eb89e7c8839884effaf9fcf69de1b4d7cf08511f7",
+        "newSmoothingNativeSha256": "48cc14395ca3150aaf16910820ec5f1b6cb06c083f479d31ce1e014a6b9610c6"
+      },
+      {
+        "caseId": "review-flat-wide-short-ends",
+        "method": "HorizontalSlopeFill",
+        "oldSmoothingPlacementCount": 260,
+        "newSmoothingPlacementCount": 238,
+        "oldSmoothingNativeSha256": "6329878d30fda884f00f3c512f4d14ab7129c0e2db8fa14425a12fac934ae4bb",
+        "newSmoothingNativeSha256": "35d96b619808b3ee42c3848abecc7af8fcf46968b6138607de52b90e93f0c1d2"
+      },
+      {
+        "caseId": "review-raised-sheer-tumblehome",
+        "method": "HorizontalSlopeFill",
+        "oldSmoothingPlacementCount": 866,
+        "newSmoothingPlacementCount": 760,
+        "oldSmoothingNativeSha256": "8fdadc2302f4606465f0260ee48c5a97f2b53597904742996742d45f79a6c003",
+        "newSmoothingNativeSha256": "59b4e806f10775abb58b7bcd7a4c11b4e63f76a1dcb5f5bc5f886101cfbfe89f"
+      },
+      {
+        "caseId": "small-odd-short-transitions",
+        "method": "HorizontalSlopeFill",
+        "oldSmoothingPlacementCount": 40,
+        "newSmoothingPlacementCount": 36,
+        "oldSmoothingNativeSha256": "74443e9acad6fc99517ae84fbb8d402720c321d8663317b1501f28455dca55bc",
+        "newSmoothingNativeSha256": "96f13322a8bc73017bf196428b3fe87425fdff110bd507c9f6ab98a00d4731fa"
+      },
+      {
+        "caseId": "small-odd-short-transitions",
+        "method": "HybridSlopeFill",
+        "oldSmoothingPlacementCount": 34,
+        "newSmoothingPlacementCount": 30,
+        "oldSmoothingNativeSha256": "537eeb1320f308cf2a21d0c352f2a33f8050116efc090dcff9d0ce4c3e22178e",
+        "newSmoothingNativeSha256": "578260689068ea55a95538dffcd53b4deadec8d222e65abbc8af247661e349fb"
+      },
+      {
+        "caseId": "small-even-raised-transitions",
+        "method": "HorizontalSlopeFill",
+        "oldSmoothingPlacementCount": 56,
+        "newSmoothingPlacementCount": 50,
+        "oldSmoothingNativeSha256": "3343eb1b57934c2d982b949fb8ce6f6fdad691d426b1d92628dfa7acdae012ff",
+        "newSmoothingNativeSha256": "e1f1faeb0aecd513454c1cb89dbe87d5f600a6e7fcf7a47d97f18265130eb488"
+      },
+      {
+        "caseId": "large-rounded-long-runs",
+        "method": "HorizontalSlopeFill",
+        "oldSmoothingPlacementCount": 1290,
+        "newSmoothingPlacementCount": 966,
+        "oldSmoothingNativeSha256": "b3b4d02c76c4eca24bd67b8e77740da87beb84f48feae484111178fec59418a8",
+        "newSmoothingNativeSha256": "6ffe47b9a968ddc2f80487d1a0d550d989434b4d374b341fe5879d7224d8cdc1"
+      },
+      {
+        "caseId": "large-rounded-long-runs",
+        "method": "HybridSlopeFill",
+        "oldSmoothingPlacementCount": 1075,
+        "newSmoothingPlacementCount": 1059,
+        "oldSmoothingNativeSha256": "4b09847f44fde30c4c4dc22b913ffc99387875c2f56e0294beead1758c739c5f",
+        "newSmoothingNativeSha256": "e5445e2c533cd0352d8080075fcc66423aebc177cfb6d27219c2ed9164897f9d"
+      },
+      {
+        "caseId": "large-raised-deep-v",
+        "method": "HorizontalSlopeFill",
+        "oldSmoothingPlacementCount": 1858,
+        "newSmoothingPlacementCount": 1320,
+        "oldSmoothingNativeSha256": "e9426df385e1b682aa9c6204cfeb85ae5921caffdfedb9c51ede7fc59ec81a4d",
+        "newSmoothingNativeSha256": "0c4802c927d12fced08df8fff33c32f9fcd1e0e453ffc069bf5d8760c9ded0d4"
+      },
+      {
+        "caseId": "large-raised-deep-v",
+        "method": "HybridSlopeFill",
+        "oldSmoothingPlacementCount": 1205,
+        "newSmoothingPlacementCount": 1183,
+        "oldSmoothingNativeSha256": "ad4ce115fa9827b72a1406a58589713bcbce2d082d199cf773d3a1b03fbdadce",
+        "newSmoothingNativeSha256": "49e04f53de193c52bd62afdb42cfa8f569b38bd76594e678fd330048e1e84a37"
+      }
+    ]
+  }
+}

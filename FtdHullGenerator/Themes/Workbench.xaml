@@ -1,0 +1,138 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--
+        Workbench: the light Hull Forge palette. An instrument bench in the tradition of
+        classic technical software — workbench grey chassis, working white surfaces, quiet
+        grey rules, graphite type, and exactly two signal colours: instrument blue for
+        anything the user acts on or selects, and data orange for values the tool produced.
+        Nothing else is coloured. The standard dark palette in Forge.xaml answers key for
+        key, so the same control templates dress either one.
+    -->
+
+    <!-- Chassis and surfaces -->
+    <Color x:Key="ChassisColor">#F0F0F0</Color>
+    <Color x:Key="PanelColor">#FFFFFF</Color>
+    <Color x:Key="PanelHeaderColor">#E6E6E6</Color>
+    <Color x:Key="DisplayColor">#FFFFFF</Color>
+    <Color x:Key="SteelColor">#0072BD</Color>
+    <Color x:Key="SkyColor">#1976D2</Color>
+    <Color x:Key="GoldColor">#EDB120</Color>
+    <Color x:Key="AmberColor">#0072BD</Color>
+    <Color x:Key="OrangeColor">#D95319</Color>
+    <Color x:Key="RedColor">#A2142F</Color>
+
+    <SolidColorBrush x:Key="ChassisBrush" Color="{StaticResource ChassisColor}" />
+    <SolidColorBrush x:Key="PanelBrush" Color="{StaticResource PanelColor}" />
+    <SolidColorBrush x:Key="PanelHeaderBrush" Color="{StaticResource PanelHeaderColor}" />
+    <SolidColorBrush x:Key="DisplayBrush" Color="{StaticResource DisplayColor}" />
+    <SolidColorBrush x:Key="RecessBrush" Color="#F7F7F7" />
+    <SolidColorBrush x:Key="ControlBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ControlHoverBrush" Color="#EDEDED" />
+    <SolidColorBrush x:Key="PanelBorderBrush" Color="#C7C7C7" />
+    <SolidColorBrush x:Key="EdgeShadowBrush" Color="#7F7F7F" />
+    <SolidColorBrush x:Key="EdgeHighlightBrush" Color="#ADADAD" />
+    <SolidColorBrush x:Key="SteelBrush" Color="{StaticResource SteelColor}" />
+    <SolidColorBrush x:Key="SkyBrush" Color="{StaticResource SkyColor}" />
+    <SolidColorBrush x:Key="FocusBrush" Color="{StaticResource SteelColor}" />
+    <SolidColorBrush x:Key="SelectionBrush" Color="#E3EFF8" />
+
+    <!-- Raised key face: the faint top-to-bottom fall-off of a classic pushbutton. -->
+    <LinearGradientBrush x:Key="KeyFaceBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFFFFF" Offset="0" />
+        <GradientStop Color="#F0F0F0" Offset="1" />
+    </LinearGradientBrush>
+
+    <!-- Hover and press wash over a control face. Light chassis darkens; see Forge. -->
+    <SolidColorBrush x:Key="HoverOverlayBrush" Color="#000000" />
+    <SolidColorBrush x:Key="PressOverlayBrush" Color="#000000" />
+
+    <!-- Type -->
+    <SolidColorBrush x:Key="PrimaryTextBrush" Color="#1A1A1A" />
+    <SolidColorBrush x:Key="SecondaryTextBrush" Color="#404040" />
+    <SolidColorBrush x:Key="MutedTextBrush" Color="#6B6B6B" />
+    <SolidColorBrush x:Key="InkBrush" Color="#252525" />
+    <SolidColorBrush x:Key="SelectedTextBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="KnobBrush" Color="#FFFFFF" />
+    <!-- Type on the readout tiles. -->
+    <SolidColorBrush x:Key="DisplayTextBrush" Color="#1A1A1A" />
+    <SolidColorBrush x:Key="DisplayLabelBrush" Color="#6B6B6B" />
+
+    <!-- Signal band -->
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource SteelColor}" />
+    <SolidColorBrush x:Key="AccentHoverBrush" Color="#1E88D6" />
+    <SolidColorBrush x:Key="AccentDimBrush" Color="#D6E7F4" />
+    <SolidColorBrush x:Key="ReadoutBrush" Color="{StaticResource SteelColor}" />
+    <SolidColorBrush x:Key="OrangeBrush" Color="{StaticResource OrangeColor}" />
+    <SolidColorBrush x:Key="RedBrush" Color="{StaticResource RedColor}" />
+    <SolidColorBrush x:Key="OkBrush" Color="#2E7D32" />
+    <SolidColorBrush x:Key="WarningBrush" Color="#F57C00" />
+    <SolidColorBrush x:Key="ErrorBrush" Color="#D32F2F" />
+
+    <!-- Primary key: solid instrument blue, darkening when pressed. -->
+    <SolidColorBrush x:Key="PrimaryKeyBorderBrush" Color="#00619F" />
+    <SolidColorBrush x:Key="PrimaryKeyBorderPressedBrush" Color="#004E80" />
+
+    <LinearGradientBrush x:Key="SunriseKeyBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#0A86D8" Offset="0" />
+        <GradientStop Color="{StaticResource SteelColor}" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="SunriseKeyPressedBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#00639F" Offset="0" />
+        <GradientStop Color="#00537F" Offset="1" />
+    </LinearGradientBrush>
+
+    <!-- The signal band under the title and along the floor of the viewport: the
+         default plot colour order read left to right. -->
+    <LinearGradientBrush x:Key="SunriseBrush" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Color="{StaticResource SteelColor}" Offset="0" />
+        <GradientStop Color="{StaticResource OrangeColor}" Offset="0.55" />
+        <GradientStop Color="{StaticResource GoldColor}" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="SunriseVerticalBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="{StaticResource SteelColor}" Offset="0" />
+        <GradientStop Color="{StaticResource OrangeColor}" Offset="0.55" />
+        <GradientStop Color="{StaticResource GoldColor}" Offset="1" />
+    </LinearGradientBrush>
+
+    <!-- ==================== Lattice viewport ==================== -->
+    <!-- A figure window: white paper, a fine grid, and a heavier line every five. -->
+    <SolidColorBrush x:Key="ViewportBackgroundBrush" Color="#FDFDFD" />
+
+    <DrawingBrush x:Key="MinorGridBrush" TileMode="Tile"
+                  Viewport="0,0,24,24" ViewportUnits="Absolute"
+                  Viewbox="0,0,24,24" ViewboxUnits="Absolute">
+        <DrawingBrush.Drawing>
+            <GeometryDrawing>
+                <GeometryDrawing.Geometry>
+                    <GeometryGroup>
+                        <LineGeometry StartPoint="0,0" EndPoint="24,0" />
+                        <LineGeometry StartPoint="0,0" EndPoint="0,24" />
+                    </GeometryGroup>
+                </GeometryDrawing.Geometry>
+                <GeometryDrawing.Pen>
+                    <Pen Thickness="1" Brush="#14000000" />
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="MajorGridBrush" TileMode="Tile"
+                  Viewport="0,0,120,120" ViewportUnits="Absolute"
+                  Viewbox="0,0,120,120" ViewboxUnits="Absolute">
+        <DrawingBrush.Drawing>
+            <GeometryDrawing>
+                <GeometryDrawing.Geometry>
+                    <GeometryGroup>
+                        <LineGeometry StartPoint="0,0" EndPoint="120,0" />
+                        <LineGeometry StartPoint="0,0" EndPoint="0,120" />
+                    </GeometryGroup>
+                </GeometryDrawing.Geometry>
+                <GeometryDrawing.Pen>
+                    <Pen Thickness="1" Brush="#2A0072BD" />
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+</ResourceDictionary>

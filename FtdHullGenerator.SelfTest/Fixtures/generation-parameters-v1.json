@@ -1,0 +1,66 @@
+{
+  "Format": "HullForge.GenerationParameters",
+  "FormatVersion": 1,
+  "GeneratedUtc": "2026-09-12T00:00:00+00:00",
+  "BlueprintFile": "HF_RichMigration_120x21x14.blueprint",
+  "GameVersion": "4.0.0",
+  "Parameters": {
+    "Length": 120,
+    "Width": 21,
+    "Height": 14,
+    "BowFullness": 0.2,
+    "SternFullness": -0.15,
+    "CrossSectionCurve": 0.4,
+    "HullArmor": [
+      { "Material": "Metal", "Construction": "Solid" },
+      { "Material": null, "Construction": "Solid" },
+      { "Material": "HeavyArmor", "Construction": "Pole" }
+    ],
+    "DeckArmor": [
+      { "Material": "Metal", "Construction": "Solid" },
+      { "Material": "Wood", "Construction": "Solid" }
+    ],
+    "Beamify": true,
+    "Smoothing": "HybridSlopeFill",
+    "HybridFillOffset": 3,
+    "BowStyle": "Raked",
+    "SternStyle": "Cruiser",
+    "HasBulb": true,
+    "Bulb": { "LengthPercent": 10, "WidthPercent": 40, "ForeAftPercent": 5, "RisePercent": 0 },
+    "Shape": {
+      "Bow": { "Fullness": 0.2, "Flare": 0.25, "EntranceLengthPercent": 40 },
+      "Body": { "Style": "Custom", "Fullness": 0.4, "SideShape": 0.1, "Chine": -0.6, "FlatBottom": 0.0 },
+      "Stern": { "Fullness": -0.15, "SideShape": 0.0, "RunLengthPercent": 25 },
+      "Profile": { "BowDeckRise": 1, "SternDeckRise": 2, "BowKeelRise": 0, "SternKeelRise": 3 }
+    },
+    "BottomArmor": [
+      { "Material": "Metal", "Construction": "BeamSlopeDown" }
+    ],
+    "Superstructure": {
+      "Enabled": true,
+      "Style": "JapanesePagoda",
+      "Levels": 4,
+      "Material": "LightweightAlloy",
+      "Smoothing": "HorizontalSlopeFill",
+      "ForeAftPercent": 8
+    },
+    "EffectiveShape": {
+      "Bow": { "Fullness": 0.2, "Flare": 0.25, "EntranceLengthPercent": 40 },
+      "Body": { "Style": "Custom", "Fullness": 0.4, "SideShape": 0.1, "Chine": -0.6, "FlatBottom": 0.0 },
+      "Stern": { "Fullness": -0.15, "SideShape": 0.0, "RunLengthPercent": 25 },
+      "Profile": { "BowDeckRise": 1, "SternDeckRise": 2, "BowKeelRise": 0, "SternKeelRise": 3 }
+    },
+    "EffectiveBulb": { "LengthPercent": 10, "WidthPercent": 40, "ForeAftPercent": 5, "RisePercent": 0 },
+    "EffectiveBottomArmor": [
+      { "Material": "Metal", "Construction": "BeamSlopeDown" }
+    ],
+    "EffectiveSuperstructure": {
+      "Enabled": true,
+      "Style": "JapanesePagoda",
+      "Levels": 4,
+      "Material": "LightweightAlloy",
+      "Smoothing": "HorizontalSlopeFill",
+      "ForeAftPercent": 8
+    }
+  }
+}

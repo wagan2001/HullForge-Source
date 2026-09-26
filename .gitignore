@@ -1,0 +1,37 @@
+# Build and publish output
+[Bb]in/
+[Oo]bj/
+[Pp]ublish/
+artifacts/
+TestResults/
+
+# Visual Studio, Rider, and user-specific settings
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.lnk
+
+# Local diagnostics and temporary export files
+*.log
+*.tmp
+*.bak
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Python bytecode from the repository's own helper scripts
+__pycache__/
+*.pyc
+
+# Local development context and evidence
+/docs/
+
+# Keep only packaging entry points in the shared scripts directory
+/scripts/*
+!/scripts/Publish-Local.ps1
+!/scripts/Publish-Portable.ps1
+!/scripts/Portable-START_HERE.txt

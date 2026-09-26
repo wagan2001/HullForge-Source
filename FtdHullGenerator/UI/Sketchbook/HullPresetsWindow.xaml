@@ -1,0 +1,21 @@
+<Window x:Class="FtdHullGenerator.UI.Sketchbook.HullPresetsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sketchbook="clr-namespace:FtdHullGenerator.UI.Sketchbook"
+        Title="Hull Presets"
+        Width="1080" Height="720" MinWidth="560" MinHeight="380"
+        Background="{DynamicResource ChassisBrush}"
+        Foreground="{DynamicResource PrimaryTextBrush}"
+        FontFamily="{StaticResource PanelFont}"
+        FontSize="12"
+        TextOptions.TextFormattingMode="Display"
+        TextOptions.TextRenderingMode="ClearType"
+        UseLayoutRounding="True"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner">
+    <!-- The modeless Hull Presets window. It hosts the single Alternate Naval Sketchbook
+         browser control; the catalog, the thumbnails and the apply transaction stay owned by
+         MainWindow, and closing this window only hides it so the editor button can bring it
+         back. -->
+    <sketchbook:SketchbookBrowser x:Name="BrowserControl" Margin="10" />
+</Window>

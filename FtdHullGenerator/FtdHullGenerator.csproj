@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>HullForge</AssemblyName>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <!-- The brand mark is shared by the built executable, window, and taskbar. -->
+    <ApplicationIcon>Assets\HullForge.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- WPF does not glob image assets into the assembly by default, and both are addressed
+         by pack URI: the mark the title bar draws and the window/taskbar icon. -->
+    <Resource Include="Assets\HullForgeLogo.png" />
+    <Resource Include="Assets\HullForge.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- The self-test asserts internal invariants such as the beam run split, without
+         widening the application's public surface to do it. -->
+    <InternalsVisibleTo Include="FtdHullGenerator.SelfTest" />
+  </ItemGroup>
+</Project>

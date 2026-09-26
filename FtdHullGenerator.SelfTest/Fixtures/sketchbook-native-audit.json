@@ -1,0 +1,6693 @@
+{
+  "schemaId": "hull-forge.sketchbook-native-audit",
+  "schemaVersion": 1,
+  "definitionsSha256": "e00ed14184f7651eab34351e9fe16d382f537200edbcf6fd28fcef1959bb2d60",
+  "catalogGameVersion": "4.3.4.0",
+  "candidates": [
+    {
+      "id": "01",
+      "name": "Channel Knife Torpedo Boat",
+      "suggestedLength": 36,
+      "suggestedWidth": 9,
+      "suggestedHeight": 5,
+      "minimumLength": 25,
+      "minimumWidth": 7,
+      "minimumHeight": 4,
+      "bowStyle": "Spoon",
+      "sternStyle": "Transom",
+      "bow": {
+        "fullness": -0.2,
+        "flare": 0.5,
+        "entranceLengthPercent": 45
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": -0.15,
+        "sideShape": 0.1,
+        "chine": 0.9,
+        "flatBottom": 0.05
+      },
+      "stern": {
+        "fullness": 0.2,
+        "sideShape": 0.05,
+        "runLengthPercent": 18
+      },
+      "baselineProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal"
+    },
+    {
+      "id": "02",
+      "name": "Offshore Picket Cutter",
+      "suggestedLength": 58,
+      "suggestedWidth": 11,
+      "suggestedHeight": 7,
+      "minimumLength": 39,
+      "minimumWidth": 9,
+      "minimumHeight": 6,
+      "bowStyle": "Spoon",
+      "sternStyle": "Canoe",
+      "bow": {
+        "fullness": 0.4,
+        "flare": 0.25,
+        "entranceLengthPercent": 27
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.55,
+        "sideShape": 0.1,
+        "chine": -0.8,
+        "flatBottom": 0.16
+      },
+      "stern": {
+        "fullness": 0.1,
+        "sideShape": -0.15,
+        "runLengthPercent": 40
+      },
+      "baselineProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical"
+    },
+    {
+      "id": "03",
+      "name": "Shoal-Water Assault Gunboat",
+      "suggestedLength": 48,
+      "suggestedWidth": 13,
+      "suggestedHeight": 5,
+      "minimumLength": 31,
+      "minimumWidth": 9,
+      "minimumHeight": 4,
+      "bowStyle": "Raked",
+      "sternStyle": "Square",
+      "bow": {
+        "fullness": 0.35,
+        "flare": 0.05,
+        "entranceLengthPercent": 22
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.65,
+        "sideShape": 0,
+        "chine": 0.65,
+        "flatBottom": 0.72
+      },
+      "stern": {
+        "fullness": 0.75,
+        "sideShape": 0,
+        "runLengthPercent": 12
+      },
+      "baselineProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None"
+    },
+    {
+      "id": "04",
+      "name": "Greyhound Torpedo Destroyer",
+      "suggestedLength": 126,
+      "suggestedWidth": 13,
+      "suggestedHeight": 9,
+      "minimumLength": 81,
+      "minimumWidth": 11,
+      "minimumHeight": 7,
+      "bowStyle": "Spoon",
+      "sternStyle": "Canoe",
+      "bow": {
+        "fullness": -0.7,
+        "flare": 0.5,
+        "entranceLengthPercent": 70
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": -0.2,
+        "sideShape": 0.1,
+        "chine": -0.45,
+        "flatBottom": 0.02
+      },
+      "stern": {
+        "fullness": -0.55,
+        "sideShape": 0,
+        "runLengthPercent": 25
+      },
+      "baselineProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 2
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 2
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 2
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal"
+    },
+    {
+      "id": "05",
+      "name": "High-Forecastle Ocean Destroyer",
+      "suggestedLength": 142,
+      "suggestedWidth": 17,
+      "suggestedHeight": 11,
+      "minimumLength": 91,
+      "minimumWidth": 13,
+      "minimumHeight": 8,
+      "bowStyle": "Raked",
+      "sternStyle": "Counter",
+      "bow": {
+        "fullness": 0.65,
+        "flare": 1.05,
+        "entranceLengthPercent": 36
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.35,
+        "sideShape": 0.45,
+        "chine": -0.65,
+        "flatBottom": 0.18
+      },
+      "stern": {
+        "fullness": 0.15,
+        "sideShape": 0.1,
+        "runLengthPercent": 26
+      },
+      "baselineProfile": {
+        "bowDeckRise": 5,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical"
+    },
+    {
+      "id": "06",
+      "name": "Ram-Bow Armored Leader",
+      "suggestedLength": 132,
+      "suggestedWidth": 19,
+      "suggestedHeight": 10,
+      "minimumLength": 89,
+      "minimumWidth": 13,
+      "minimumHeight": 8,
+      "bowStyle": "Axe",
+      "sternStyle": "Transom",
+      "bow": {
+        "fullness": 0.9,
+        "flare": 0.25,
+        "entranceLengthPercent": 24
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.35,
+        "sideShape": -0.18,
+        "chine": 0.9,
+        "flatBottom": 0.28
+      },
+      "stern": {
+        "fullness": 0.55,
+        "sideShape": -0.05,
+        "runLengthPercent": 20
+      },
+      "baselineProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None"
+    },
+    {
+      "id": "07",
+      "name": "Fleet Torpedo Cruiser",
+      "suggestedLength": 174,
+      "suggestedWidth": 23,
+      "suggestedHeight": 12,
+      "minimumLength": 115,
+      "minimumWidth": 17,
+      "minimumHeight": 9,
+      "bowStyle": "Pointed",
+      "sternStyle": "Cruiser",
+      "bow": {
+        "fullness": 0.75,
+        "flare": 0.35,
+        "entranceLengthPercent": 24
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.48,
+        "sideShape": 0.2,
+        "chine": -0.4,
+        "flatBottom": 0.36
+      },
+      "stern": {
+        "fullness": -0.65,
+        "sideShape": 0.1,
+        "runLengthPercent": 49
+      },
+      "baselineProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 3,
+        "bowKeelRise": 10,
+        "sternKeelRise": 4
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 2,
+        "bowKeelRise": 7,
+        "sternKeelRise": 3
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 2,
+        "bowKeelRise": 7,
+        "sternKeelRise": 3
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal"
+    },
+    {
+      "id": "08",
+      "name": "Atlantic Commerce Raider",
+      "suggestedLength": 214,
+      "suggestedWidth": 23,
+      "suggestedHeight": 13,
+      "minimumLength": 145,
+      "minimumWidth": 17,
+      "minimumHeight": 10,
+      "bowStyle": "Spoon",
+      "sternStyle": "Counter",
+      "bow": {
+        "fullness": -0.85,
+        "flare": 0.1,
+        "entranceLengthPercent": 72
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.25,
+        "sideShape": 0,
+        "chine": -0.75,
+        "flatBottom": 0.12
+      },
+      "stern": {
+        "fullness": -0.1,
+        "sideShape": -0.25,
+        "runLengthPercent": 16
+      },
+      "baselineProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 3
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 2
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 2
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal"
+    },
+    {
+      "id": "09",
+      "name": "Northern Ocean Cruiser",
+      "suggestedLength": 194,
+      "suggestedWidth": 25,
+      "suggestedHeight": 15,
+      "minimumLength": 125,
+      "minimumWidth": 19,
+      "minimumHeight": 11,
+      "bowStyle": "Clipper",
+      "sternStyle": "Cruiser",
+      "bow": {
+        "fullness": 0.9,
+        "flare": 1.2,
+        "entranceLengthPercent": 36
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0,
+        "sideShape": 0.55,
+        "chine": -0.35,
+        "flatBottom": 0.08
+      },
+      "stern": {
+        "fullness": 0.2,
+        "sideShape": 0.35,
+        "runLengthPercent": 30
+      },
+      "baselineProfile": {
+        "bowDeckRise": 6,
+        "sternDeckRise": 2,
+        "bowKeelRise": 2,
+        "sternKeelRise": 2
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical"
+    },
+    {
+      "id": "10",
+      "name": "Treaty-Breaker Large Cruiser",
+      "suggestedLength": 228,
+      "suggestedWidth": 29,
+      "suggestedHeight": 15,
+      "minimumLength": 151,
+      "minimumWidth": 21,
+      "minimumHeight": 11,
+      "bowStyle": "Spoon",
+      "sternStyle": "Transom",
+      "bow": {
+        "fullness": 0.25,
+        "flare": 0.25,
+        "entranceLengthPercent": 36
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.85,
+        "sideShape": 0.05,
+        "chine": -0.65,
+        "flatBottom": 0.32
+      },
+      "stern": {
+        "fullness": 0.8,
+        "sideShape": 0.15,
+        "runLengthPercent": 20
+      },
+      "baselineProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical"
+    },
+    {
+      "id": "11",
+      "name": "Long-Run Fleet Battlecruiser",
+      "suggestedLength": 282,
+      "suggestedWidth": 31,
+      "suggestedHeight": 17,
+      "minimumLength": 181,
+      "minimumWidth": 23,
+      "minimumHeight": 13,
+      "bowStyle": "Spoon",
+      "sternStyle": "Cruiser",
+      "bow": {
+        "fullness": -0.55,
+        "flare": 0.55,
+        "entranceLengthPercent": 58
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.25,
+        "sideShape": 0.2,
+        "chine": -0.55,
+        "flatBottom": 0.18
+      },
+      "stern": {
+        "fullness": -0.5,
+        "sideShape": 0.05,
+        "runLengthPercent": 40
+      },
+      "baselineProfile": {
+        "bowDeckRise": 3,
+        "sternDeckRise": 1,
+        "bowKeelRise": 2,
+        "sternKeelRise": 4
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 2,
+        "sternKeelRise": 3
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 2,
+        "sternKeelRise": 3
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal"
+    },
+    {
+      "id": "12",
+      "name": "Ocean Fast Battleship",
+      "suggestedLength": 272,
+      "suggestedWidth": 35,
+      "suggestedHeight": 18,
+      "minimumLength": 181,
+      "minimumWidth": 25,
+      "minimumHeight": 13,
+      "bowStyle": "Spoon",
+      "sternStyle": "Transom",
+      "bow": {
+        "fullness": -0.8,
+        "flare": 0.65,
+        "entranceLengthPercent": 62
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.7,
+        "sideShape": 0.1,
+        "chine": -0.7,
+        "flatBottom": 0.3
+      },
+      "stern": {
+        "fullness": 0.35,
+        "sideShape": 0.1,
+        "runLengthPercent": 20
+      },
+      "baselineProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 2
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 3,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 3,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal"
+    },
+    {
+      "id": "13",
+      "name": "Pacific Super-Battleship",
+      "suggestedLength": 302,
+      "suggestedWidth": 45,
+      "suggestedHeight": 21,
+      "minimumLength": 199,
+      "minimumWidth": 31,
+      "minimumHeight": 15,
+      "bowStyle": "Spoon",
+      "sternStyle": "Cruiser",
+      "bow": {
+        "fullness": 0.55,
+        "flare": 0.45,
+        "entranceLengthPercent": 30
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.9,
+        "sideShape": 0.05,
+        "chine": -0.8,
+        "flatBottom": 0.58
+      },
+      "stern": {
+        "fullness": 0.6,
+        "sideShape": -0.05,
+        "runLengthPercent": 30
+      },
+      "baselineProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 2
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 3,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 3,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": true,
+      "bulb": {
+        "lengthPercent": 12,
+        "widthPercent": 45,
+        "foreAftPercent": -4,
+        "risePercent": 0
+      },
+      "recommended": "Vertical"
+    },
+    {
+      "id": "14",
+      "name": "Round-Bilge Dreadnought",
+      "suggestedLength": 188,
+      "suggestedWidth": 33,
+      "suggestedHeight": 16,
+      "minimumLength": 121,
+      "minimumWidth": 25,
+      "minimumHeight": 12,
+      "bowStyle": "Raked",
+      "sternStyle": "Cruiser",
+      "bow": {
+        "fullness": 0.8,
+        "flare": 0.05,
+        "entranceLengthPercent": 24
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.8,
+        "sideShape": -0.12,
+        "chine": -0.85,
+        "flatBottom": 0.4
+      },
+      "stern": {
+        "fullness": 0.3,
+        "sideShape": -0.2,
+        "runLengthPercent": 31
+      },
+      "baselineProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical"
+    },
+    {
+      "id": "15",
+      "name": "Tumblehome Citadel Ship",
+      "suggestedLength": 168,
+      "suggestedWidth": 29,
+      "suggestedHeight": 15,
+      "minimumLength": 111,
+      "minimumWidth": 21,
+      "minimumHeight": 11,
+      "bowStyle": "Spoon",
+      "sternStyle": "Fantail",
+      "bow": {
+        "fullness": 0.05,
+        "flare": -0.4,
+        "entranceLengthPercent": 38
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.75,
+        "sideShape": -1.05,
+        "chine": -0.55,
+        "flatBottom": 0.22
+      },
+      "stern": {
+        "fullness": 0.1,
+        "sideShape": -0.7,
+        "runLengthPercent": 30
+      },
+      "baselineProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 2,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical"
+    },
+    {
+      "id": "16",
+      "name": "Coastal Siege Dreadnought",
+      "suggestedLength": 156,
+      "suggestedWidth": 39,
+      "suggestedHeight": 10,
+      "minimumLength": 99,
+      "minimumWidth": 27,
+      "minimumHeight": 8,
+      "bowStyle": "Blunt",
+      "sternStyle": "Square",
+      "bow": {
+        "fullness": -0.5,
+        "flare": 0.25,
+        "entranceLengthPercent": 37
+      },
+      "body": {
+        "style": "Custom",
+        "fullness": 0.9,
+        "sideShape": 0.05,
+        "chine": 0.2,
+        "flatBottom": 0.85
+      },
+      "stern": {
+        "fullness": 0.4,
+        "sideShape": 0.1,
+        "runLengthPercent": 18
+      },
+      "baselineProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "expectedMinimumProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "appliedMinimumProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None"
+    }
+  ],
+  "rows": [
+    {
+      "id": "01",
+      "size": "suggested",
+      "name": "Channel Knife Torpedo Boat",
+      "requestedLength": 36,
+      "requestedWidth": 9,
+      "requestedHeight": 5,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -4,
+      "maxX": 4,
+      "minY": 0,
+      "maxY": 5,
+      "minZ": -18,
+      "maxZ": 17,
+      "occupiedLength": 36,
+      "occupiedWidth": 9,
+      "occupiedHeight": 6,
+      "occupiedCellCount": 619,
+      "blockCount": 184,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "cbf8307d5c5040920947a89d96c2e95aff6c0d701b8259a1f47cf35e82f5c39c",
+      "nativePlacementSha256": "261fbe8d3f729e5ffe5f714a4d6aa2547160163be351e8fb24fcb89f4ea9aa4f",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 371,
+      "usableCavityCellCount": 363,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 962
+        },
+        {
+          "role": "Cavity",
+          "count": 363
+        },
+        {
+          "role": "SideArmor",
+          "count": 138
+        },
+        {
+          "role": "BottomArmor",
+          "count": 276
+        },
+        {
+          "role": "DeckArmor",
+          "count": 205
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 984,
+        "hullSkinStepArea": 632,
+        "fragmentCount": 1616,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -14,
+        "cutOffset": -14,
+        "contourCount": 4,
+        "closedContourCount": 4,
+        "openEndpoints": 0,
+        "branchEndpoints": 6,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 4,
+        "maxHalfBreadthY": 3,
+        "topOccupiedY": 4,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 01 size suggested 36x9x5 bow(-0.2,0.5,45) body(Custom,-0.15,0.1,0.9,0.05) stern(0.2,0.05,18) profile(1,0,0,0) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Transom",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "01",
+      "size": "minimum",
+      "name": "Channel Knife Torpedo Boat",
+      "requestedLength": 25,
+      "requestedWidth": 7,
+      "requestedHeight": 4,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -3,
+      "maxX": 3,
+      "minY": 0,
+      "maxY": 4,
+      "minZ": -12,
+      "maxZ": 12,
+      "occupiedLength": 25,
+      "occupiedWidth": 7,
+      "occupiedHeight": 5,
+      "occupiedCellCount": 312,
+      "blockCount": 96,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "cfcbad1eef14d01835b444b6de8efd5ac6969d5d031eccbad81d908468ec1804",
+      "nativePlacementSha256": "8aab3c449e8c873ba02a6fc93cd9238ed93e253217eff9cde786988dfbc535bf",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 117,
+      "usableCavityCellCount": 110,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 453
+        },
+        {
+          "role": "Cavity",
+          "count": 110
+        },
+        {
+          "role": "SideArmor",
+          "count": 63
+        },
+        {
+          "role": "BottomArmor",
+          "count": 149
+        },
+        {
+          "role": "DeckArmor",
+          "count": 100
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 548,
+        "hullSkinStepArea": 348,
+        "fragmentCount": 842,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -9,
+        "cutOffset": -9,
+        "contourCount": 4,
+        "closedContourCount": 4,
+        "openEndpoints": 0,
+        "branchEndpoints": 4,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 3,
+        "maxHalfBreadthY": 2,
+        "topOccupiedY": 3,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 01 size minimum 25x7x4 bow(-0.2,0.5,45) body(Custom,-0.15,0.1,0.9,0.05) stern(0.2,0.05,18) profile(1,0,0,0) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Transom",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "02",
+      "size": "suggested",
+      "name": "Offshore Picket Cutter",
+      "requestedLength": 58,
+      "requestedWidth": 11,
+      "requestedHeight": 7,
+      "appliedProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -5,
+      "maxX": 5,
+      "minY": 0,
+      "maxY": 8,
+      "minZ": -29,
+      "maxZ": 28,
+      "occupiedLength": 58,
+      "occupiedWidth": 11,
+      "occupiedHeight": 9,
+      "occupiedCellCount": 1266,
+      "blockCount": 388,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "039a45419e803aedec6f2ada827192ccfc41df5f279bf8a2aee391392a1449c9",
+      "nativePlacementSha256": "3617acf8e781833eb51594f2b36feee07f33f409b2778969b53bbd07e231f9d7",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 1447,
+      "usableCavityCellCount": 1418,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 3058
+        },
+        {
+          "role": "Cavity",
+          "count": 1418
+        },
+        {
+          "role": "SideArmor",
+          "count": 278
+        },
+        {
+          "role": "BottomArmor",
+          "count": 552
+        },
+        {
+          "role": "DeckArmor",
+          "count": 436
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 2032,
+        "hullSkinStepArea": 1272,
+        "fragmentCount": 3536,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -16,
+        "cutOffset": -16,
+        "contourCount": 1,
+        "closedContourCount": 1,
+        "openEndpoints": 0,
+        "branchEndpoints": 6,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 5,
+        "maxHalfBreadthY": 6,
+        "topOccupiedY": 6,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 02 size suggested 58x11x7 bow(0.4,0.25,27) body(Custom,0.55,0.1,-0.8,0.16) stern(0.1,-0.15,40) profile(2,1,0,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Canoe",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "02",
+      "size": "minimum",
+      "name": "Offshore Picket Cutter",
+      "requestedLength": 39,
+      "requestedWidth": 9,
+      "requestedHeight": 6,
+      "appliedProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -4,
+      "maxX": 4,
+      "minY": 0,
+      "maxY": 7,
+      "minZ": -19,
+      "maxZ": 19,
+      "occupiedLength": 39,
+      "occupiedWidth": 9,
+      "occupiedHeight": 8,
+      "occupiedCellCount": 712,
+      "blockCount": 226,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "9ad0817dd0f2b85d1a5707a04b0fbe5a51667fdef7e093646b90a6f047d87eb7",
+      "nativePlacementSha256": "8a261ea945043263884b4738745200ac4304cd4bb4907e01dd9aa4ef99ae5dbf",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 618,
+      "usableCavityCellCount": 599,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 1497
+        },
+        {
+          "role": "Cavity",
+          "count": 599
+        },
+        {
+          "role": "SideArmor",
+          "count": 182
+        },
+        {
+          "role": "BottomArmor",
+          "count": 303
+        },
+        {
+          "role": "DeckArmor",
+          "count": 227
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 1182,
+        "hullSkinStepArea": 732,
+        "fragmentCount": 1986,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -11,
+        "cutOffset": -11,
+        "contourCount": 2,
+        "closedContourCount": 2,
+        "openEndpoints": 0,
+        "branchEndpoints": 0,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 4,
+        "maxHalfBreadthY": 5,
+        "topOccupiedY": 5,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 02 size minimum 39x9x6 bow(0.4,0.25,27) body(Custom,0.55,0.1,-0.8,0.16) stern(0.1,-0.15,40) profile(2,1,0,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Canoe",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "03",
+      "size": "suggested",
+      "name": "Shoal-Water Assault Gunboat",
+      "requestedLength": 48,
+      "requestedWidth": 13,
+      "requestedHeight": 5,
+      "appliedProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None",
+      "minX": -6,
+      "maxX": 6,
+      "minY": 0,
+      "maxY": 4,
+      "minZ": -24,
+      "maxZ": 23,
+      "occupiedLength": 48,
+      "occupiedWidth": 13,
+      "occupiedHeight": 5,
+      "occupiedCellCount": 1258,
+      "blockCount": 369,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "0c6ee229633c6fe5338cc639b2bc525cd1df9ed86282b386164582c6b50b417e",
+      "nativePlacementSha256": "aeb17d72ed5143e0102f2d09d0c84b848e6d391c79ea8889dc78894ce3792137",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 1285,
+      "usableCavityCellCount": 1279,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 583
+        },
+        {
+          "role": "Cavity",
+          "count": 1279
+        },
+        {
+          "role": "SideArmor",
+          "count": 228
+        },
+        {
+          "role": "BottomArmor",
+          "count": 562
+        },
+        {
+          "role": "DeckArmor",
+          "count": 468
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 1708,
+        "hullSkinStepArea": 1242,
+        "fragmentCount": 2958,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -22,
+        "cutOffset": -22,
+        "contourCount": 2,
+        "closedContourCount": 2,
+        "openEndpoints": 0,
+        "branchEndpoints": 2,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 6,
+        "maxHalfBreadthY": 4,
+        "topOccupiedY": 4,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 03 size suggested 48x13x5 bow(0.35,0.05,22) body(Custom,0.65,0,0.65,0.72) stern(0.75,0,12) profile(0,0,0,0) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Raked sternStyle=Square",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "03",
+      "size": "minimum",
+      "name": "Shoal-Water Assault Gunboat",
+      "requestedLength": 31,
+      "requestedWidth": 9,
+      "requestedHeight": 4,
+      "appliedProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None",
+      "minX": -4,
+      "maxX": 4,
+      "minY": 0,
+      "maxY": 3,
+      "minZ": -15,
+      "maxZ": 15,
+      "occupiedLength": 31,
+      "occupiedWidth": 9,
+      "occupiedHeight": 4,
+      "occupiedCellCount": 565,
+      "blockCount": 168,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "b39f622e93690ad425d9080f4bedaefbdc22cd1b2673eac938ff23503412c1a5",
+      "nativePlacementSha256": "ffd4fd47dbdd75916a8cec753d43d1e452c1cc673c496c6a850522067aeaf453",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 362,
+      "usableCavityCellCount": 358,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 193
+        },
+        {
+          "role": "Cavity",
+          "count": 358
+        },
+        {
+          "role": "SideArmor",
+          "count": 131
+        },
+        {
+          "role": "BottomArmor",
+          "count": 247
+        },
+        {
+          "role": "DeckArmor",
+          "count": 187
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 804,
+        "hullSkinStepArea": 562,
+        "fragmentCount": 1316,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -14,
+        "cutOffset": -14,
+        "contourCount": 4,
+        "closedContourCount": 4,
+        "openEndpoints": 0,
+        "branchEndpoints": 4,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 4,
+        "maxHalfBreadthY": 2,
+        "topOccupiedY": 3,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 03 size minimum 31x9x4 bow(0.35,0.05,22) body(Custom,0.65,0,0.65,0.72) stern(0.75,0,12) profile(0,0,0,0) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Raked sternStyle=Square",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "04",
+      "size": "suggested",
+      "name": "Greyhound Torpedo Destroyer",
+      "requestedLength": 126,
+      "requestedWidth": 13,
+      "requestedHeight": 9,
+      "appliedProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 2
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -6,
+      "maxX": 6,
+      "minY": 0,
+      "maxY": 10,
+      "minZ": -63,
+      "maxZ": 62,
+      "occupiedLength": 126,
+      "occupiedWidth": 13,
+      "occupiedHeight": 11,
+      "occupiedCellCount": 2806,
+      "blockCount": 773,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "ef0bed263c28a16b71208c57ad1150702149d403d45a943d770e25ae90053f95",
+      "nativePlacementSha256": "3b84ffb9e6fee602b22fdc902819fd8096d64bd44b3679f21fddacf0ca0cb03d",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 3596,
+      "usableCavityCellCount": 3568,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 11644
+        },
+        {
+          "role": "Cavity",
+          "count": 3568
+        },
+        {
+          "role": "SideArmor",
+          "count": 765
+        },
+        {
+          "role": "BottomArmor",
+          "count": 1144
+        },
+        {
+          "role": "DeckArmor",
+          "count": 897
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 4570,
+        "hullSkinStepArea": 2474,
+        "fragmentCount": 7868,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -40,
+        "cutOffset": -40,
+        "contourCount": 10,
+        "closedContourCount": 10,
+        "openEndpoints": 0,
+        "branchEndpoints": 10,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 6,
+        "maxHalfBreadthY": 8,
+        "topOccupiedY": 8,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 04 size suggested 126x13x9 bow(-0.7,0.5,70) body(Custom,-0.2,0.1,-0.45,0.02) stern(-0.55,0,25) profile(2,0,0,2) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Canoe",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "04",
+      "size": "minimum",
+      "name": "Greyhound Torpedo Destroyer",
+      "requestedLength": 81,
+      "requestedWidth": 11,
+      "requestedHeight": 7,
+      "appliedProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 2
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -5,
+      "maxX": 5,
+      "minY": 0,
+      "maxY": 8,
+      "minZ": -40,
+      "maxZ": 40,
+      "occupiedLength": 81,
+      "occupiedWidth": 11,
+      "occupiedHeight": 9,
+      "occupiedCellCount": 1440,
+      "blockCount": 408,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "6bebef3b46a51813652d8b90a2124864a4077753c096153cd70e707dc3cf5ec8",
+      "nativePlacementSha256": "bdc59d2d98566e6c653a2ddce514e3102db85cfdb8b9646bbbc700dcb7018bfb",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 1275,
+      "usableCavityCellCount": 1261,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 5318
+        },
+        {
+          "role": "Cavity",
+          "count": 1261
+        },
+        {
+          "role": "SideArmor",
+          "count": 348
+        },
+        {
+          "role": "BottomArmor",
+          "count": 625
+        },
+        {
+          "role": "DeckArmor",
+          "count": 467
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 2458,
+        "hullSkinStepArea": 1380,
+        "fragmentCount": 4072,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -26,
+        "cutOffset": -26,
+        "contourCount": 2,
+        "closedContourCount": 2,
+        "openEndpoints": 0,
+        "branchEndpoints": 4,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 5,
+        "maxHalfBreadthY": 6,
+        "topOccupiedY": 6,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 04 size minimum 81x11x7 bow(-0.7,0.5,70) body(Custom,-0.2,0.1,-0.45,0.02) stern(-0.55,0,25) profile(2,0,0,2) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Canoe",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "05",
+      "size": "suggested",
+      "name": "High-Forecastle Ocean Destroyer",
+      "requestedLength": 142,
+      "requestedWidth": 17,
+      "requestedHeight": 11,
+      "appliedProfile": {
+        "bowDeckRise": 5,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -8,
+      "maxX": 8,
+      "minY": 0,
+      "maxY": 15,
+      "minZ": -71,
+      "maxZ": 70,
+      "occupiedLength": 142,
+      "occupiedWidth": 17,
+      "occupiedHeight": 16,
+      "occupiedCellCount": 5041,
+      "blockCount": 1397,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "f141b20c7e19297eabb02f1f8f9d0e47e082cc3fb42ec16bf4025df1f4d3a90a",
+      "nativePlacementSha256": "dae50ceafd11221ade96c97a747d3398d9d2db3c23a87d4bc095045b16829938",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 10890,
+      "usableCavityCellCount": 10848,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 22735
+        },
+        {
+          "role": "Cavity",
+          "count": 10848
+        },
+        {
+          "role": "SideArmor",
+          "count": 1358
+        },
+        {
+          "role": "BottomArmor",
+          "count": 1980
+        },
+        {
+          "role": "DeckArmor",
+          "count": 1703
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 7454,
+        "hullSkinStepArea": 4348,
+        "fragmentCount": 13546,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -44,
+        "cutOffset": -44,
+        "contourCount": 8,
+        "closedContourCount": 8,
+        "openEndpoints": 0,
+        "branchEndpoints": 10,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 8,
+        "maxHalfBreadthY": 10,
+        "topOccupiedY": 10,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 05 size suggested 142x17x11 bow(0.65,1.05,36) body(Custom,0.35,0.45,-0.65,0.18) stern(0.15,0.1,26) profile(5,0,1,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Raked sternStyle=Counter",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "05",
+      "size": "minimum",
+      "name": "High-Forecastle Ocean Destroyer",
+      "requestedLength": 91,
+      "requestedWidth": 13,
+      "requestedHeight": 8,
+      "appliedProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -6,
+      "maxX": 6,
+      "minY": 0,
+      "maxY": 11,
+      "minZ": -45,
+      "maxZ": 45,
+      "occupiedLength": 91,
+      "occupiedWidth": 13,
+      "occupiedHeight": 12,
+      "occupiedCellCount": 2294,
+      "blockCount": 651,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "df1592d2da25ac444b470914bdd39b94e7e9e33ec2246583a54aab86c7e41d2d",
+      "nativePlacementSha256": "138c231713cd3f6f0074ef56c57d662651266461f2ef870e02f166bb911834ab",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 3273,
+      "usableCavityCellCount": 3249,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 8653
+        },
+        {
+          "role": "Cavity",
+          "count": 3249
+        },
+        {
+          "role": "SideArmor",
+          "count": 520
+        },
+        {
+          "role": "BottomArmor",
+          "count": 975
+        },
+        {
+          "role": "DeckArmor",
+          "count": 799
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 3624,
+        "hullSkinStepArea": 2166,
+        "fragmentCount": 6362,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -29,
+        "cutOffset": -29,
+        "contourCount": 6,
+        "closedContourCount": 6,
+        "openEndpoints": 0,
+        "branchEndpoints": 8,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 6,
+        "maxHalfBreadthY": 7,
+        "topOccupiedY": 7,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 05 size minimum 91x13x8 bow(0.65,1.05,36) body(Custom,0.35,0.45,-0.65,0.18) stern(0.15,0.1,26) profile(4,0,1,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Raked sternStyle=Counter",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "06",
+      "size": "suggested",
+      "name": "Ram-Bow Armored Leader",
+      "requestedLength": 132,
+      "requestedWidth": 19,
+      "requestedHeight": 10,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None",
+      "minX": -9,
+      "maxX": 9,
+      "minY": 0,
+      "maxY": 10,
+      "minZ": -66,
+      "maxZ": 65,
+      "occupiedLength": 132,
+      "occupiedWidth": 19,
+      "occupiedHeight": 11,
+      "occupiedCellCount": 5370,
+      "blockCount": 1497,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "0e21ffeebce5497b9a0a851492886c51a04e8f6f926fa8aaa0b1ca65b4b808c2",
+      "nativePlacementSha256": "630053142d944b6d57ab44fc2bb06eedb13cc2b580c5b14112876b8954b45b94",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 12835,
+      "usableCavityCellCount": 12813,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 9405
+        },
+        {
+          "role": "Cavity",
+          "count": 12813
+        },
+        {
+          "role": "SideArmor",
+          "count": 1336
+        },
+        {
+          "role": "BottomArmor",
+          "count": 2238
+        },
+        {
+          "role": "DeckArmor",
+          "count": 1796
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 7364,
+        "hullSkinStepArea": 4830,
+        "fragmentCount": 13558,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -49,
+        "cutOffset": -49,
+        "contourCount": 3,
+        "closedContourCount": 3,
+        "openEndpoints": 0,
+        "branchEndpoints": 8,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 9,
+        "maxHalfBreadthY": 6,
+        "topOccupiedY": 9,
+        "tumblehomeDelta": 1,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 06 size suggested 132x19x10 bow(0.9,0.25,24) body(Custom,0.35,-0.18,0.9,0.28) stern(0.55,-0.05,20) profile(1,0,0,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Axe sternStyle=Transom",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "06",
+      "size": "minimum",
+      "name": "Ram-Bow Armored Leader",
+      "requestedLength": 89,
+      "requestedWidth": 13,
+      "requestedHeight": 8,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None",
+      "minX": -6,
+      "maxX": 6,
+      "minY": 0,
+      "maxY": 8,
+      "minZ": -44,
+      "maxZ": 44,
+      "occupiedLength": 89,
+      "occupiedWidth": 13,
+      "occupiedHeight": 9,
+      "occupiedCellCount": 2596,
+      "blockCount": 731,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "19a735a2e0e328939f40c38326e7ba11d2de8b2565298b6c74ae1f2517c112e4",
+      "nativePlacementSha256": "1a3e430077103d7bf48bc4923422f7e3b493f8ded6738c0a900fb312b5342e18",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 4123,
+      "usableCavityCellCount": 4105,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 3712
+        },
+        {
+          "role": "Cavity",
+          "count": 4105
+        },
+        {
+          "role": "SideArmor",
+          "count": 715
+        },
+        {
+          "role": "BottomArmor",
+          "count": 1031
+        },
+        {
+          "role": "DeckArmor",
+          "count": 850
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 3626,
+        "hullSkinStepArea": 2260,
+        "fragmentCount": 6464,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -33,
+        "cutOffset": -33,
+        "contourCount": 10,
+        "closedContourCount": 10,
+        "openEndpoints": 0,
+        "branchEndpoints": 10,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 6,
+        "maxHalfBreadthY": 4,
+        "topOccupiedY": 7,
+        "tumblehomeDelta": 1,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 06 size minimum 89x13x8 bow(0.9,0.25,24) body(Custom,0.35,-0.18,0.9,0.28) stern(0.55,-0.05,20) profile(1,0,0,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Axe sternStyle=Transom",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "07",
+      "size": "suggested",
+      "name": "Fleet Torpedo Cruiser",
+      "requestedLength": 174,
+      "requestedWidth": 23,
+      "requestedHeight": 12,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 3,
+        "bowKeelRise": 10,
+        "sternKeelRise": 4
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -11,
+      "maxX": 11,
+      "minY": 0,
+      "maxY": 14,
+      "minZ": -87,
+      "maxZ": 86,
+      "occupiedLength": 174,
+      "occupiedWidth": 23,
+      "occupiedHeight": 15,
+      "occupiedCellCount": 7646,
+      "blockCount": 2158,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "eacbcfe5f3fa0d18389450c250d618ed860fc4644d872891c1f6964a3eec5ca8",
+      "nativePlacementSha256": "7c77404561f3ac3e6f2c08ad371fa404fb0937e5bf6283a382426d4289765e2a",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 20898,
+      "usableCavityCellCount": 20780,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 31604
+        },
+        {
+          "role": "Cavity",
+          "count": 20780
+        },
+        {
+          "role": "SideArmor",
+          "count": 1605
+        },
+        {
+          "role": "BottomArmor",
+          "count": 3192
+        },
+        {
+          "role": "DeckArmor",
+          "count": 2849
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 10512,
+        "hullSkinStepArea": 6984,
+        "fragmentCount": 19552,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -20,
+        "cutOffset": -20,
+        "contourCount": 4,
+        "closedContourCount": 4,
+        "openEndpoints": 0,
+        "branchEndpoints": 6,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 11,
+        "maxHalfBreadthY": 10,
+        "topOccupiedY": 11,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 07 size suggested 174x23x12 bow(0.75,0.35,24) body(Custom,0.48,0.2,-0.4,0.36) stern(-0.65,0.1,49) profile(1,3,10,4) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Pointed sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "07",
+      "size": "minimum",
+      "name": "Fleet Torpedo Cruiser",
+      "requestedLength": 115,
+      "requestedWidth": 17,
+      "requestedHeight": 9,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 2,
+        "bowKeelRise": 7,
+        "sternKeelRise": 3
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -8,
+      "maxX": 8,
+      "minY": 0,
+      "maxY": 10,
+      "minZ": -57,
+      "maxZ": 57,
+      "occupiedLength": 115,
+      "occupiedWidth": 17,
+      "occupiedHeight": 11,
+      "occupiedCellCount": 3696,
+      "blockCount": 1058,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "a58bc891f995a6abc7e1e14dfc5adbe17b34d5691fe208188dd53d9847cc245d",
+      "nativePlacementSha256": "7be1a9c3019ad50919037cba38bc1b32fc6da17d2863a89f22a8dd0e929bd1a3",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 6727,
+      "usableCavityCellCount": 6667,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 11142
+        },
+        {
+          "role": "Cavity",
+          "count": 6667
+        },
+        {
+          "role": "SideArmor",
+          "count": 800
+        },
+        {
+          "role": "BottomArmor",
+          "count": 1561
+        },
+        {
+          "role": "DeckArmor",
+          "count": 1335
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 5224,
+        "hullSkinStepArea": 3450,
+        "fragmentCount": 9454,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -15,
+        "cutOffset": -15,
+        "contourCount": 2,
+        "closedContourCount": 2,
+        "openEndpoints": 0,
+        "branchEndpoints": 4,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 8,
+        "maxHalfBreadthY": 8,
+        "topOccupiedY": 8,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 07 size minimum 115x17x9 bow(0.75,0.35,24) body(Custom,0.48,0.2,-0.4,0.36) stern(-0.65,0.1,49) profile(1,2,7,3) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Pointed sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "08",
+      "size": "suggested",
+      "name": "Atlantic Commerce Raider",
+      "requestedLength": 214,
+      "requestedWidth": 23,
+      "requestedHeight": 13,
+      "appliedProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 3
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -11,
+      "maxX": 11,
+      "minY": 0,
+      "maxY": 13,
+      "minZ": -107,
+      "maxZ": 106,
+      "occupiedLength": 214,
+      "occupiedWidth": 23,
+      "occupiedHeight": 14,
+      "occupiedCellCount": 8446,
+      "blockCount": 2312,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "d55428476ca6843d6221143e6c64583a989e288fbfa341ea76840762e2999f2c",
+      "nativePlacementSha256": "22ac896c9b4b0b62de534503cdbf24a909514410233dbf0fa7f8329916b14c97",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 22291,
+      "usableCavityCellCount": 22214,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 38248
+        },
+        {
+          "role": "Cavity",
+          "count": 22214
+        },
+        {
+          "role": "SideArmor",
+          "count": 1840
+        },
+        {
+          "role": "BottomArmor",
+          "count": 3526
+        },
+        {
+          "role": "DeckArmor",
+          "count": 3080
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 12312,
+        "hullSkinStepArea": 7512,
+        "fragmentCount": 22754,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -79,
+        "cutOffset": -79,
+        "contourCount": 10,
+        "closedContourCount": 10,
+        "openEndpoints": 0,
+        "branchEndpoints": 16,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 11,
+        "maxHalfBreadthY": 11,
+        "topOccupiedY": 12,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 08 size suggested 214x23x13 bow(-0.85,0.1,72) body(Custom,0.25,0,-0.75,0.12) stern(-0.1,-0.25,16) profile(0,1,1,3) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Counter",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "08",
+      "size": "minimum",
+      "name": "Atlantic Commerce Raider",
+      "requestedLength": 145,
+      "requestedWidth": 17,
+      "requestedHeight": 10,
+      "appliedProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 2
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -8,
+      "maxX": 8,
+      "minY": 0,
+      "maxY": 10,
+      "minZ": -72,
+      "maxZ": 72,
+      "occupiedLength": 145,
+      "occupiedWidth": 17,
+      "occupiedHeight": 11,
+      "occupiedCellCount": 4179,
+      "blockCount": 1150,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "feb2b180f775af3ae76832b8a78340630530081d63eaf8182d39439569e3d321",
+      "nativePlacementSha256": "8230cb50f76fb0ea45254b82001a0d74bb47e371a496af2fd96c236166109f9f",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 7586,
+      "usableCavityCellCount": 7546,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 15390
+        },
+        {
+          "role": "Cavity",
+          "count": 7546
+        },
+        {
+          "role": "SideArmor",
+          "count": 945
+        },
+        {
+          "role": "BottomArmor",
+          "count": 1763
+        },
+        {
+          "role": "DeckArmor",
+          "count": 1471
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 6298,
+        "hullSkinStepArea": 3796,
+        "fragmentCount": 11310,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -54,
+        "cutOffset": -54,
+        "contourCount": 8,
+        "closedContourCount": 8,
+        "openEndpoints": 0,
+        "branchEndpoints": 12,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 8,
+        "maxHalfBreadthY": 8,
+        "topOccupiedY": 9,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 08 size minimum 145x17x10 bow(-0.85,0.1,72) body(Custom,0.25,0,-0.75,0.12) stern(-0.1,-0.25,16) profile(0,1,1,2) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Counter",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "09",
+      "size": "suggested",
+      "name": "Northern Ocean Cruiser",
+      "requestedLength": 194,
+      "requestedWidth": 25,
+      "requestedHeight": 15,
+      "appliedProfile": {
+        "bowDeckRise": 6,
+        "sternDeckRise": 2,
+        "bowKeelRise": 2,
+        "sternKeelRise": 2
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -12,
+      "maxX": 12,
+      "minY": 0,
+      "maxY": 20,
+      "minZ": -97,
+      "maxZ": 96,
+      "occupiedLength": 194,
+      "occupiedWidth": 25,
+      "occupiedHeight": 21,
+      "occupiedCellCount": 9654,
+      "blockCount": 2708,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "9a66ef55a2939e6f20ea15b7910aafdec2eb2a5e4dcfc80ce91f25e8fa21b2d7",
+      "nativePlacementSha256": "0bc181f5d1484cd97371df90f510b7d3fa615dd154f3ba7b9b30b1d6c27fc3ee",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 29788,
+      "usableCavityCellCount": 29646,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 62550
+        },
+        {
+          "role": "Cavity",
+          "count": 29646
+        },
+        {
+          "role": "SideArmor",
+          "count": 1915
+        },
+        {
+          "role": "BottomArmor",
+          "count": 4060
+        },
+        {
+          "role": "DeckArmor",
+          "count": 3679
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 14510,
+        "hullSkinStepArea": 8922,
+        "fragmentCount": 27122,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -60,
+        "cutOffset": -60,
+        "contourCount": 18,
+        "closedContourCount": 18,
+        "openEndpoints": 0,
+        "branchEndpoints": 18,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 12,
+        "maxHalfBreadthY": 15,
+        "topOccupiedY": 15,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 09 size suggested 194x25x15 bow(0.9,1.2,36) body(Custom,0,0.55,-0.35,0.08) stern(0.2,0.35,30) profile(6,2,2,2) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Clipper sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "09",
+      "size": "minimum",
+      "name": "Northern Ocean Cruiser",
+      "requestedLength": 125,
+      "requestedWidth": 19,
+      "requestedHeight": 11,
+      "appliedProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -9,
+      "maxX": 9,
+      "minY": 0,
+      "maxY": 14,
+      "minZ": -62,
+      "maxZ": 62,
+      "occupiedLength": 125,
+      "occupiedWidth": 19,
+      "occupiedHeight": 15,
+      "occupiedCellCount": 4592,
+      "blockCount": 1303,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "109a1a607c9199887afa813e3c45c16489e959f82743afc3beb11a1c4152d13c",
+      "nativePlacementSha256": "3a49e706ad215714233fede83bd4f02aa41f3ccc346309a886abe8f496c48c5e",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 9428,
+      "usableCavityCellCount": 9363,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 21670
+        },
+        {
+          "role": "Cavity",
+          "count": 9363
+        },
+        {
+          "role": "SideArmor",
+          "count": 870
+        },
+        {
+          "role": "BottomArmor",
+          "count": 1983
+        },
+        {
+          "role": "DeckArmor",
+          "count": 1739
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 7024,
+        "hullSkinStepArea": 4382,
+        "fragmentCount": 12784,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -40,
+        "cutOffset": -40,
+        "contourCount": 14,
+        "closedContourCount": 14,
+        "openEndpoints": 0,
+        "branchEndpoints": 14,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 9,
+        "maxHalfBreadthY": 10,
+        "topOccupiedY": 10,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 09 size minimum 125x19x11 bow(0.9,1.2,36) body(Custom,0,0.55,-0.35,0.08) stern(0.2,0.35,30) profile(4,1,1,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Clipper sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "10",
+      "size": "suggested",
+      "name": "Treaty-Breaker Large Cruiser",
+      "requestedLength": 228,
+      "requestedWidth": 29,
+      "requestedHeight": 15,
+      "appliedProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -14,
+      "maxX": 14,
+      "minY": 0,
+      "maxY": 16,
+      "minZ": -114,
+      "maxZ": 113,
+      "occupiedLength": 228,
+      "occupiedWidth": 29,
+      "occupiedHeight": 17,
+      "occupiedCellCount": 14738,
+      "blockCount": 4091,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "97fd211c5d8bd5e3a8d122d6cd9c75ff9a151f72ba252d549e347d0967efc63c",
+      "nativePlacementSha256": "86b9ffcbe5b5d35ea5f58942ccde787a6604e9c3aff944d1886f8768f56e1870",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 56304,
+      "usableCavityCellCount": 56202,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 41464
+        },
+        {
+          "role": "Cavity",
+          "count": 56202
+        },
+        {
+          "role": "SideArmor",
+          "count": 3201
+        },
+        {
+          "role": "BottomArmor",
+          "count": 5996
+        },
+        {
+          "role": "DeckArmor",
+          "count": 5541
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 19094,
+        "hullSkinStepArea": 12818,
+        "fragmentCount": 36248,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -86,
+        "cutOffset": -86,
+        "contourCount": 10,
+        "closedContourCount": 10,
+        "openEndpoints": 0,
+        "branchEndpoints": 12,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 14,
+        "maxHalfBreadthY": 14,
+        "topOccupiedY": 14,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 10 size suggested 228x29x15 bow(0.25,0.25,36) body(Custom,0.85,0.05,-0.65,0.32) stern(0.8,0.15,20) profile(2,0,1,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Transom",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "10",
+      "size": "minimum",
+      "name": "Treaty-Breaker Large Cruiser",
+      "requestedLength": 151,
+      "requestedWidth": 21,
+      "requestedHeight": 11,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -10,
+      "maxX": 10,
+      "minY": 0,
+      "maxY": 11,
+      "minZ": -75,
+      "maxZ": 75,
+      "occupiedLength": 151,
+      "occupiedWidth": 21,
+      "occupiedHeight": 12,
+      "occupiedCellCount": 6949,
+      "blockCount": 1921,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "39abba442c8e7b12bea435249e330924779b5ed57f9e046b33654313e11592de",
+      "nativePlacementSha256": "66422ecf22b793b986045b13834909f7b0fc266cca158da1b99ac92ea7e93216",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 17884,
+      "usableCavityCellCount": 17818,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 13285
+        },
+        {
+          "role": "Cavity",
+          "count": 17818
+        },
+        {
+          "role": "SideArmor",
+          "count": 1508
+        },
+        {
+          "role": "BottomArmor",
+          "count": 2871
+        },
+        {
+          "role": "DeckArmor",
+          "count": 2570
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 9204,
+        "hullSkinStepArea": 6166,
+        "fragmentCount": 17098,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -57,
+        "cutOffset": -57,
+        "contourCount": 3,
+        "closedContourCount": 3,
+        "openEndpoints": 0,
+        "branchEndpoints": 10,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 10,
+        "maxHalfBreadthY": 9,
+        "topOccupiedY": 10,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 10 size minimum 151x21x11 bow(0.25,0.25,36) body(Custom,0.85,0.05,-0.65,0.32) stern(0.8,0.15,20) profile(1,0,1,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Transom",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "11",
+      "size": "suggested",
+      "name": "Long-Run Fleet Battlecruiser",
+      "requestedLength": 282,
+      "requestedWidth": 31,
+      "requestedHeight": 17,
+      "appliedProfile": {
+        "bowDeckRise": 3,
+        "sternDeckRise": 1,
+        "bowKeelRise": 2,
+        "sternKeelRise": 4
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -15,
+      "maxX": 15,
+      "minY": 0,
+      "maxY": 19,
+      "minZ": -141,
+      "maxZ": 140,
+      "occupiedLength": 282,
+      "occupiedWidth": 31,
+      "occupiedHeight": 20,
+      "occupiedCellCount": 15510,
+      "blockCount": 4259,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "b58cb65e27575f77da9480ae962355bb10a33fdd7e5cd10512728ed8e9f7d6e5",
+      "nativePlacementSha256": "c5b5ec9584e34d24d3a1c79b7cb3cae288af9406e4fd3d2768e5d1d2341c0266",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 57305,
+      "usableCavityCellCount": 57064,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 102266
+        },
+        {
+          "role": "Cavity",
+          "count": 57064
+        },
+        {
+          "role": "SideArmor",
+          "count": 3073
+        },
+        {
+          "role": "BottomArmor",
+          "count": 6500
+        },
+        {
+          "role": "DeckArmor",
+          "count": 5937
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 21974,
+        "hullSkinStepArea": 13962,
+        "fragmentCount": 41584,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -52,
+        "cutOffset": -52,
+        "contourCount": 20,
+        "closedContourCount": 20,
+        "openEndpoints": 0,
+        "branchEndpoints": 20,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 15,
+        "maxHalfBreadthY": 16,
+        "topOccupiedY": 16,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 11 size suggested 282x31x17 bow(-0.55,0.55,58) body(Custom,0.25,0.2,-0.55,0.18) stern(-0.5,0.05,40) profile(3,1,2,4) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "11",
+      "size": "minimum",
+      "name": "Long-Run Fleet Battlecruiser",
+      "requestedLength": 181,
+      "requestedWidth": 23,
+      "requestedHeight": 13,
+      "appliedProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 1,
+        "bowKeelRise": 2,
+        "sternKeelRise": 3
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -11,
+      "maxX": 11,
+      "minY": 0,
+      "maxY": 14,
+      "minZ": -90,
+      "maxZ": 90,
+      "occupiedLength": 181,
+      "occupiedWidth": 23,
+      "occupiedHeight": 15,
+      "occupiedCellCount": 7274,
+      "blockCount": 2048,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "67e3c91d6403342f8e7f5ae406e2a9641831a77603e907271fe50a0163f39c8c",
+      "nativePlacementSha256": "648840edf872bdf0022d9a27471245d4aab2d0c7b3fd380b103a701e0f47fe85",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 18907,
+      "usableCavityCellCount": 18768,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 36403
+        },
+        {
+          "role": "Cavity",
+          "count": 18768
+        },
+        {
+          "role": "SideArmor",
+          "count": 1449
+        },
+        {
+          "role": "BottomArmor",
+          "count": 3093
+        },
+        {
+          "role": "DeckArmor",
+          "count": 2732
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 10618,
+        "hullSkinStepArea": 6730,
+        "fragmentCount": 19692,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -35,
+        "cutOffset": -35,
+        "contourCount": 14,
+        "closedContourCount": 14,
+        "openEndpoints": 0,
+        "branchEndpoints": 14,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 11,
+        "maxHalfBreadthY": 12,
+        "topOccupiedY": 12,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 11 size minimum 181x23x13 bow(-0.55,0.55,58) body(Custom,0.25,0.2,-0.55,0.18) stern(-0.5,0.05,40) profile(2,1,2,3) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "12",
+      "size": "suggested",
+      "name": "Ocean Fast Battleship",
+      "requestedLength": 272,
+      "requestedWidth": 35,
+      "requestedHeight": 18,
+      "appliedProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 2
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -17,
+      "maxX": 17,
+      "minY": 0,
+      "maxY": 21,
+      "minZ": -136,
+      "maxZ": 135,
+      "occupiedLength": 272,
+      "occupiedWidth": 35,
+      "occupiedHeight": 22,
+      "occupiedCellCount": 18616,
+      "blockCount": 5230,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "90b60095aaeb1ba1814bd4691d7ddcc02dfc7cb169062db6ef148e35fac29892",
+      "nativePlacementSha256": "67e4115521fe3c96c17f32fefd6db93af9e945242778a0bf502ce6ba0dbff97d",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 84085,
+      "usableCavityCellCount": 83985,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 106839
+        },
+        {
+          "role": "Cavity",
+          "count": 83985
+        },
+        {
+          "role": "SideArmor",
+          "count": 4742
+        },
+        {
+          "role": "BottomArmor",
+          "count": 7208
+        },
+        {
+          "role": "DeckArmor",
+          "count": 6666
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 24634,
+        "hullSkinStepArea": 15636,
+        "fragmentCount": 46914,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -94,
+        "cutOffset": -94,
+        "contourCount": 18,
+        "closedContourCount": 18,
+        "openEndpoints": 0,
+        "branchEndpoints": 18,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 17,
+        "maxHalfBreadthY": 16,
+        "topOccupiedY": 17,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 12 size suggested 272x35x18 bow(-0.8,0.65,62) body(Custom,0.7,0.1,-0.7,0.3) stern(0.35,0.1,20) profile(4,0,1,2) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Transom",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "12",
+      "size": "minimum",
+      "name": "Ocean Fast Battleship",
+      "requestedLength": 181,
+      "requestedWidth": 25,
+      "requestedHeight": 13,
+      "appliedProfile": {
+        "bowDeckRise": 3,
+        "sternDeckRise": 0,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Horizontal",
+      "minX": -12,
+      "maxX": 12,
+      "minY": 0,
+      "maxY": 15,
+      "minZ": -90,
+      "maxZ": 90,
+      "occupiedLength": 181,
+      "occupiedWidth": 25,
+      "occupiedHeight": 16,
+      "occupiedCellCount": 8676,
+      "blockCount": 2464,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "21c0aad2610df75f463ae83cd40bfa80dc4ebb085c3f7fc88d6960c77eee4e50",
+      "nativePlacementSha256": "d0f00750fd05b27c17d9b00cde665b9c4b958cc2e634f34f0d117ba7e37de290",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 26330,
+      "usableCavityCellCount": 26280,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 37444
+        },
+        {
+          "role": "Cavity",
+          "count": 26280
+        },
+        {
+          "role": "SideArmor",
+          "count": 2178
+        },
+        {
+          "role": "BottomArmor",
+          "count": 3429
+        },
+        {
+          "role": "DeckArmor",
+          "count": 3069
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 11854,
+        "hullSkinStepArea": 7482,
+        "fragmentCount": 22102,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -64,
+        "cutOffset": -64,
+        "contourCount": 6,
+        "closedContourCount": 6,
+        "openEndpoints": 0,
+        "branchEndpoints": 12,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 12,
+        "maxHalfBreadthY": 12,
+        "topOccupiedY": 12,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 12 size minimum 181x25x13 bow(-0.8,0.65,62) body(Custom,0.7,0.1,-0.7,0.3) stern(0.35,0.1,20) profile(3,0,1,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Transom",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "13",
+      "size": "suggested",
+      "name": "Pacific Super-Battleship",
+      "requestedLength": 302,
+      "requestedWidth": 45,
+      "requestedHeight": 21,
+      "appliedProfile": {
+        "bowDeckRise": 4,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 2
+      },
+      "hasBulb": true,
+      "bulb": {
+        "lengthPercent": 12,
+        "widthPercent": 45,
+        "foreAftPercent": -4,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -22,
+      "maxX": 22,
+      "minY": 0,
+      "maxY": 24,
+      "minZ": -151,
+      "maxZ": 150,
+      "occupiedLength": 302,
+      "occupiedWidth": 45,
+      "occupiedHeight": 25,
+      "occupiedCellCount": 31509,
+      "blockCount": 8900,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "ecfbb9797e7a63fd26a16c95430cbe47037660323300b9de9b3f04a9dad3bb7b",
+      "nativePlacementSha256": "196039bfba12fe28479eb3d31fc767142dc2865ac655de4fbdf4038c7b754048",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 190345,
+      "usableCavityCellCount": 190118,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 118123
+        },
+        {
+          "role": "Cavity",
+          "count": 190118
+        },
+        {
+          "role": "SideArmor",
+          "count": 7522
+        },
+        {
+          "role": "BottomArmor",
+          "count": 12412
+        },
+        {
+          "role": "DeckArmor",
+          "count": 11575
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 38966,
+        "hullSkinStepArea": 26940,
+        "fragmentCount": 75330,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -96,
+        "cutOffset": -96,
+        "contourCount": 8,
+        "closedContourCount": 8,
+        "openEndpoints": 0,
+        "branchEndpoints": 14,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 22,
+        "maxHalfBreadthY": 20,
+        "topOccupiedY": 20,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 13 size suggested 302x45x21 bow(0.55,0.45,30) body(Custom,0.9,0.05,-0.8,0.58) stern(0.6,-0.05,30) profile(4,1,1,2) bulb(True,L12% W45% Z-4% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "13",
+      "size": "minimum",
+      "name": "Pacific Super-Battleship",
+      "requestedLength": 199,
+      "requestedWidth": 31,
+      "requestedHeight": 15,
+      "appliedProfile": {
+        "bowDeckRise": 3,
+        "sternDeckRise": 1,
+        "bowKeelRise": 1,
+        "sternKeelRise": 1
+      },
+      "hasBulb": true,
+      "bulb": {
+        "lengthPercent": 12,
+        "widthPercent": 45,
+        "foreAftPercent": -4,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -15,
+      "maxX": 15,
+      "minY": 0,
+      "maxY": 17,
+      "minZ": -99,
+      "maxZ": 99,
+      "occupiedLength": 199,
+      "occupiedWidth": 31,
+      "occupiedHeight": 18,
+      "occupiedCellCount": 14306,
+      "blockCount": 4064,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "799e5344194d0a13e67a6ca8ddebf6459fa6fd0a44fd0adf96f7a58381a9695d",
+      "nativePlacementSha256": "b01ff623f83b256aaa5a60d198bc80f1b03dac066fbf0e9aa9163908e30e0c29",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 57947,
+      "usableCavityCellCount": 57853,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 38883
+        },
+        {
+          "role": "Cavity",
+          "count": 57853
+        },
+        {
+          "role": "SideArmor",
+          "count": 3523
+        },
+        {
+          "role": "BottomArmor",
+          "count": 5634
+        },
+        {
+          "role": "DeckArmor",
+          "count": 5149
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 18036,
+        "hullSkinStepArea": 12326,
+        "fragmentCount": 34320,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -65,
+        "cutOffset": -65,
+        "contourCount": 9,
+        "closedContourCount": 9,
+        "openEndpoints": 0,
+        "branchEndpoints": 10,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 15,
+        "maxHalfBreadthY": 13,
+        "topOccupiedY": 14,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 13 size minimum 199x31x15 bow(0.55,0.45,30) body(Custom,0.9,0.05,-0.8,0.58) stern(0.6,-0.05,30) profile(3,1,1,1) bulb(True,L12% W45% Z-4% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "14",
+      "size": "suggested",
+      "name": "Round-Bilge Dreadnought",
+      "requestedLength": 188,
+      "requestedWidth": 33,
+      "requestedHeight": 16,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -16,
+      "maxX": 16,
+      "minY": 0,
+      "maxY": 16,
+      "minZ": -94,
+      "maxZ": 93,
+      "occupiedLength": 188,
+      "occupiedWidth": 33,
+      "occupiedHeight": 17,
+      "occupiedCellCount": 13068,
+      "blockCount": 3763,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "a4bdac51ca723ae4f5c5b242710146f474910cc8a211b673d003d6cbf5c1dec7",
+      "nativePlacementSha256": "45bd8c20abc39c179f1dd96a5cfd3b2637b5d4f89a7c4c5383a6f0d5de36dd40",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 57172,
+      "usableCavityCellCount": 57041,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 35359
+        },
+        {
+          "role": "Cavity",
+          "count": 57041
+        },
+        {
+          "role": "SideArmor",
+          "count": 2916
+        },
+        {
+          "role": "BottomArmor",
+          "count": 5400
+        },
+        {
+          "role": "DeckArmor",
+          "count": 4752
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 17266,
+        "hullSkinStepArea": 11808,
+        "fragmentCount": 32882,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -56,
+        "cutOffset": -56,
+        "contourCount": 14,
+        "closedContourCount": 14,
+        "openEndpoints": 0,
+        "branchEndpoints": 14,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 16,
+        "maxHalfBreadthY": 14,
+        "topOccupiedY": 15,
+        "tumblehomeDelta": 1,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 14 size suggested 188x33x16 bow(0.8,0.05,24) body(Custom,0.8,-0.12,-0.85,0.4) stern(0.3,-0.2,31) profile(1,1,0,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Raked sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "14",
+      "size": "minimum",
+      "name": "Round-Bilge Dreadnought",
+      "requestedLength": 121,
+      "requestedWidth": 25,
+      "requestedHeight": 12,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -12,
+      "maxX": 12,
+      "minY": 0,
+      "maxY": 12,
+      "minZ": -60,
+      "maxZ": 60,
+      "occupiedLength": 121,
+      "occupiedWidth": 25,
+      "occupiedHeight": 13,
+      "occupiedCellCount": 6370,
+      "blockCount": 1884,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "b59aebff94fee2a2dfbc78f6439f4139d3a6039b4529eca27a5ffa677fe7583f",
+      "nativePlacementSha256": "1bb909012defecd4501015b3d43d2c42267590d5b3686e4bf143accf5e4240e3",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 19353,
+      "usableCavityCellCount": 19290,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 13665
+        },
+        {
+          "role": "Cavity",
+          "count": 19290
+        },
+        {
+          "role": "SideArmor",
+          "count": 1405
+        },
+        {
+          "role": "BottomArmor",
+          "count": 2629
+        },
+        {
+          "role": "DeckArmor",
+          "count": 2336
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 8510,
+        "hullSkinStepArea": 5850,
+        "fragmentCount": 15922,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -37,
+        "cutOffset": -37,
+        "contourCount": 12,
+        "closedContourCount": 12,
+        "openEndpoints": 0,
+        "branchEndpoints": 14,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 12,
+        "maxHalfBreadthY": 10,
+        "topOccupiedY": 11,
+        "tumblehomeDelta": 1,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 14 size minimum 121x25x12 bow(0.8,0.05,24) body(Custom,0.8,-0.12,-0.85,0.4) stern(0.3,-0.2,31) profile(1,1,0,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Raked sternStyle=Cruiser",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "15",
+      "size": "suggested",
+      "name": "Tumblehome Citadel Ship",
+      "requestedLength": 168,
+      "requestedWidth": 29,
+      "requestedHeight": 15,
+      "appliedProfile": {
+        "bowDeckRise": 2,
+        "sternDeckRise": 2,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -14,
+      "maxX": 14,
+      "minY": 0,
+      "maxY": 16,
+      "minZ": -84,
+      "maxZ": 83,
+      "occupiedLength": 168,
+      "occupiedWidth": 29,
+      "occupiedHeight": 17,
+      "occupiedCellCount": 10088,
+      "blockCount": 3020,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "639737a5ce46ced6bed1080589033b5cbf0a9cd8d12f8b68f7e9259c62b962ac",
+      "nativePlacementSha256": "d51675bb582b980f074423338fb11dc334f5664a602237d5ad1fd4b106bc2c3c",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 41325,
+      "usableCavityCellCount": 41175,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 31561
+        },
+        {
+          "role": "Cavity",
+          "count": 41175
+        },
+        {
+          "role": "SideArmor",
+          "count": 2889
+        },
+        {
+          "role": "BottomArmor",
+          "count": 4416
+        },
+        {
+          "role": "DeckArmor",
+          "count": 2783
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 14428,
+        "hullSkinStepArea": 9742,
+        "fragmentCount": 27428,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -62,
+        "cutOffset": -62,
+        "contourCount": 12,
+        "closedContourCount": 12,
+        "openEndpoints": 0,
+        "branchEndpoints": 18,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 14,
+        "maxHalfBreadthY": 10,
+        "topOccupiedY": 15,
+        "tumblehomeDelta": 4,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 15 size suggested 168x29x15 bow(0.05,-0.4,38) body(Custom,0.75,-1.05,-0.55,0.22) stern(0.1,-0.7,30) profile(2,2,0,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Fantail",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "15",
+      "size": "minimum",
+      "name": "Tumblehome Citadel Ship",
+      "requestedLength": 111,
+      "requestedWidth": 21,
+      "requestedHeight": 11,
+      "appliedProfile": {
+        "bowDeckRise": 1,
+        "sternDeckRise": 1,
+        "bowKeelRise": 0,
+        "sternKeelRise": 1
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "Vertical",
+      "minX": -10,
+      "maxX": 10,
+      "minY": 0,
+      "maxY": 11,
+      "minZ": -55,
+      "maxZ": 55,
+      "occupiedLength": 111,
+      "occupiedWidth": 21,
+      "occupiedHeight": 12,
+      "occupiedCellCount": 4946,
+      "blockCount": 1479,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "562418959584a30e323619691f47e65124339f07f1ec9f0bcc70e82778703545",
+      "nativePlacementSha256": "f7ca9a176d0bff5e69118abd1ec02fb5ccea222739baebd703202a5808d36216",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 12778,
+      "usableCavityCellCount": 12690,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 10336
+        },
+        {
+          "role": "Cavity",
+          "count": 12690
+        },
+        {
+          "role": "SideArmor",
+          "count": 1493
+        },
+        {
+          "role": "BottomArmor",
+          "count": 2109
+        },
+        {
+          "role": "DeckArmor",
+          "count": 1344
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 6920,
+        "hullSkinStepArea": 4672,
+        "fragmentCount": 12888,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -44,
+        "cutOffset": -44,
+        "contourCount": 6,
+        "closedContourCount": 6,
+        "openEndpoints": 0,
+        "branchEndpoints": 12,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 10,
+        "maxHalfBreadthY": 8,
+        "topOccupiedY": 11,
+        "tumblehomeDelta": 3,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 15 size minimum 111x21x11 bow(0.05,-0.4,38) body(Custom,0.75,-1.05,-0.55,0.22) stern(0.1,-0.7,30) profile(1,1,0,1) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Spoon sternStyle=Fantail",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "16",
+      "size": "suggested",
+      "name": "Coastal Siege Dreadnought",
+      "requestedLength": 156,
+      "requestedWidth": 39,
+      "requestedHeight": 10,
+      "appliedProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None",
+      "minX": -19,
+      "maxX": 19,
+      "minY": 0,
+      "maxY": 9,
+      "minZ": -78,
+      "maxZ": 77,
+      "occupiedLength": 156,
+      "occupiedWidth": 39,
+      "occupiedHeight": 10,
+      "occupiedCellCount": 12612,
+      "blockCount": 3524,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "9377c2e015dc178c34f39594d6e159eb03619535c31269ba57d28ed667e5a807",
+      "nativePlacementSha256": "6af4edacb0df2e8e4b666aa7a4513a759ad9912590322a2edee4987d84c7e3e3",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 38378,
+      "usableCavityCellCount": 38370,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 9858
+        },
+        {
+          "role": "Cavity",
+          "count": 38370
+        },
+        {
+          "role": "SideArmor",
+          "count": 2388
+        },
+        {
+          "role": "BottomArmor",
+          "count": 5268
+        },
+        {
+          "role": "DeckArmor",
+          "count": 4956
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 14412,
+        "hullSkinStepArea": 11292,
+        "fragmentCount": 27288,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -59,
+        "cutOffset": -59,
+        "contourCount": 6,
+        "closedContourCount": 6,
+        "openEndpoints": 0,
+        "branchEndpoints": 6,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 19,
+        "maxHalfBreadthY": 7,
+        "topOccupiedY": 9,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 16 size suggested 156x39x10 bow(-0.5,0.25,37) body(Custom,0.9,0.05,0.2,0.85) stern(0.4,0.1,18) profile(0,0,0,0) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Blunt sternStyle=Square",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    },
+    {
+      "id": "16",
+      "size": "minimum",
+      "name": "Coastal Siege Dreadnought",
+      "requestedLength": 99,
+      "requestedWidth": 27,
+      "requestedHeight": 8,
+      "appliedProfile": {
+        "bowDeckRise": 0,
+        "sternDeckRise": 0,
+        "bowKeelRise": 0,
+        "sternKeelRise": 0
+      },
+      "hasBulb": false,
+      "bulb": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "recommended": "None",
+      "minX": -13,
+      "maxX": 13,
+      "minY": 0,
+      "maxY": 7,
+      "minZ": -49,
+      "maxZ": 49,
+      "occupiedLength": 99,
+      "occupiedWidth": 27,
+      "occupiedHeight": 8,
+      "occupiedCellCount": 5668,
+      "blockCount": 1614,
+      "constructionNotes": [],
+      "baseNormalizedSha256": "f12f9d13d6a4eebfd2c3a969a78d1b6d8536679efb4d31f899b01f7c3df7bbbc",
+      "nativePlacementSha256": "18c95ea62f6a07d7865d6f7bf6e4e06bbad0611b0bbbd4d4ff8a3c36c34b85bd",
+      "deterministic": true,
+      "validatorErrorCount": 0,
+      "validatorErrors": [],
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "erodedCoreComponentCount": 1,
+      "erodedCoreCellCount": 12292,
+      "usableCavityCellCount": 12288,
+      "cavityComponentCount": 1,
+      "contextDiagnosticCount": 0,
+      "roleHistogram": [
+        {
+          "role": "Outside",
+          "count": 3428
+        },
+        {
+          "role": "Cavity",
+          "count": 12288
+        },
+        {
+          "role": "SideArmor",
+          "count": 1224
+        },
+        {
+          "role": "BottomArmor",
+          "count": 2321
+        },
+        {
+          "role": "DeckArmor",
+          "count": 2123
+        },
+        {
+          "role": "InternalArmor",
+          "count": 0
+        },
+        {
+          "role": "ReservedArmorAir",
+          "count": 0
+        }
+      ],
+      "surface": {
+        "hullSkinExposedArea": 6646,
+        "hullSkinStepArea": 5062,
+        "fragmentCount": 12296,
+        "coverageNoteCount": 0
+      },
+      "section": {
+        "stationZ": -38,
+        "cutOffset": -38,
+        "contourCount": 3,
+        "closedContourCount": 3,
+        "openEndpoints": 0,
+        "branchEndpoints": 4,
+        "coplanarFaces": 0,
+        "degenerateTouches": 0,
+        "maxHalfBreadth": 13,
+        "maxHalfBreadthY": 5,
+        "topOccupiedY": 7,
+        "tumblehomeDelta": 0,
+        "anyClosedContour": true
+      },
+      "reproducer": "candidate 16 size minimum 99x27x8 bow(-0.5,0.25,37) body(Custom,0.9,0.05,0.2,0.85) stern(0.4,0.1,18) profile(0,0,0,0) bulb(False,L8% W35% Z0% Y0%) beamify=True smoothing=None bowStyle=Blunt sternStyle=Square",
+      "status": "OK",
+      "statusReason": null,
+      "competingExplanations": null
+    }
+  ],
+  "smoothing": [
+    {
+      "id": "01",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 619,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "01",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "0b0933d8f700c86096431254702a81f89758c4179288f1ad731dbc3337b437b5",
+      "smoothingPlacementCount": 50,
+      "occupiedCellCount": 724,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "01",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "4882511fab38bdcd7d6553b6e9263b378aed973e9e63785ba9b7c38cbbaef3ec",
+      "smoothingPlacementCount": 46,
+      "occupiedCellCount": 737,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "01",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "743b8105e8f8fa9a023804e5aa62c417d58e3248091da4a463a8758108c3a98c",
+      "smoothingPlacementCount": 43,
+      "occupiedCellCount": 696,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "01",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "fd1d74b872637410c64326c8d99317bcd7f59ff1ac14d7c09ee93ed5fc060ab9",
+      "smoothingPlacementCount": 52,
+      "occupiedCellCount": 768,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "02",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 1266,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "02",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "de1bb81ee6da504aea8d9116213fc8c049a8fce4e28a1e192bba331e5e150c97",
+      "smoothingPlacementCount": 111,
+      "occupiedCellCount": 1487,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "02",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "08049459c5719588232aacf1dee252d14f3d7626cc38b08fbf23b0cb5ba8c2b0",
+      "smoothingPlacementCount": 94,
+      "occupiedCellCount": 1486,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "02",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "2f557157ab55f97e73ea0d0f44195dc9f1b720b35e0f880718320cc772b8548a",
+      "smoothingPlacementCount": 100,
+      "occupiedCellCount": 1441,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "02",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "dbcc22957f0e1e013a61b88a9b0bfc109fcd7a3fbb766a1d9efe929bcf3c0bc6",
+      "smoothingPlacementCount": 121,
+      "occupiedCellCount": 1567,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "03",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 1258,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "03",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "43bcf11157cd01609573b7d51e9ac85bb09c9f4e722b1d78accfe4c78738a09f",
+      "smoothingPlacementCount": 37,
+      "occupiedCellCount": 1326,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "03",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "6060db5f592e1f9e50156945f14cda48809cc3eea447e84d7721d76fc33ecc6d",
+      "smoothingPlacementCount": 58,
+      "occupiedCellCount": 1340,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "03",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "04d7447117c2789e3a636555c67bd127b75e11ab5aeede2250faa877b4842aa9",
+      "smoothingPlacementCount": 37,
+      "occupiedCellCount": 1308,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "03",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "fca6dbc0bda5b8950949050fa638a4fa8188dbea490274482188d5c706e2da21",
+      "smoothingPlacementCount": 39,
+      "occupiedCellCount": 1338,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "04",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 2806,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "04",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "8ec57b4a1a4e22a12357cb4ef82c1541c7e3b88899d858d99c6ad3315c678b14",
+      "smoothingPlacementCount": 164,
+      "occupiedCellCount": 3277,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "04",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "83551414bb790fbc443497ea7808c4bd1e647296dbbcc50b3b46706748397bdf",
+      "smoothingPlacementCount": 146,
+      "occupiedCellCount": 3356,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "04",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "45b2ea9f9799566e89d54f96a6234b9bfc841fe93b91eb422822f21f30b59cbb",
+      "smoothingPlacementCount": 157,
+      "occupiedCellCount": 3265,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "04",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "3d632662968683b54cf0206fe7935437c15e9137e1d08af94dccb175647cbac3",
+      "smoothingPlacementCount": 292,
+      "occupiedCellCount": 3691,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "05",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 5041,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "05",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "54c932a4af94958671bb9207b2df1d5d12707a9b72d575fa82088e29c41cec70",
+      "smoothingPlacementCount": 283,
+      "occupiedCellCount": 5793,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "05",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "dda0e300fc1fcc3a015a09857bf5cf8d19b3306158978cc013e8e2c50493230d",
+      "smoothingPlacementCount": 248,
+      "occupiedCellCount": 5933,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "05",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "6270de13e5eae2c63903570094f06fa9d3a4e3079eb638f18c70efe0f8905746",
+      "smoothingPlacementCount": 280,
+      "occupiedCellCount": 5787,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "05",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "5451b128bcb7a1682fd88bf4341119eca0b89bd396741d5c12811d2c210a569d",
+      "smoothingPlacementCount": 601,
+      "occupiedCellCount": 6741,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "06",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 5370,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "06",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "cd53ec8fe232a7c70e2b0fcb4bb355d9a8ceeeb5d39d852d6040dc51a8564ee3",
+      "smoothingPlacementCount": 166,
+      "occupiedCellCount": 5805,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "06",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "f19c73eabdf55233840938dfafbd18b947e9e65006ccdd600455264d2c1010a5",
+      "smoothingPlacementCount": 170,
+      "occupiedCellCount": 5888,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "06",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "502982439ee71b4c89d1a6f6ae93b5db168fd3f3f9e1b8ebd4e3faa00d6af4e2",
+      "smoothingPlacementCount": 132,
+      "occupiedCellCount": 5701,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "06",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "ebce6b80cdc6a2ca4a8c3ab247b57278d2482a2df13ce5d26fe6c7eb3a651c54",
+      "smoothingPlacementCount": 238,
+      "occupiedCellCount": 6069,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "07",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 7646,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "07",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "671f5f90dc3c51ba346b7cae47199c9a1c0867c5eedd9718c40502fafba699a4",
+      "smoothingPlacementCount": 484,
+      "occupiedCellCount": 8976,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "07",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "ad570771a48848c51bbdc417a562308a16c1c41b78bbb9e2e3a787c00f0cb569",
+      "smoothingPlacementCount": 350,
+      "occupiedCellCount": 8748,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "07",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "6ed9367b5433fe6147fcaf7e670fb98ef5336de5e8802784b0cf1c1b38a6227c",
+      "smoothingPlacementCount": 465,
+      "occupiedCellCount": 8922,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "07",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "c58daa096d9163b078de8c0d6c1b0b50ee0af9f01548678272b53c13693d5958",
+      "smoothingPlacementCount": 678,
+      "occupiedCellCount": 9754,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "08",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 8446,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "08",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "fa5500bf872b9d9b7d1c67bbf2908aff6492c95d7c158e700dd7724f26c9c63a",
+      "smoothingPlacementCount": 340,
+      "occupiedCellCount": 9515,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "08",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "a0cce9715f6d9d727043b9cc2ffef835b1ef9878c1263d0db86a8cfdf01b5fba",
+      "smoothingPlacementCount": 320,
+      "occupiedCellCount": 9634,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "08",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "063496285a92cd48b38b23f2bc34954983fe10a7094509719814aa6b5c7fba87",
+      "smoothingPlacementCount": 323,
+      "occupiedCellCount": 9449,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "08",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "b11820b0eb8e49fa0dfa9f7e502de1ed4e3ab780444afeed3eab37953367168c",
+      "smoothingPlacementCount": 666,
+      "occupiedCellCount": 10411,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "09",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 9654,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "09",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "0e083d4aa234aa7e8839a93d6538e429358b0281a0e56450d772a08705fc0112",
+      "smoothingPlacementCount": 602,
+      "occupiedCellCount": 11046,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "09",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "174d5a5ce2eaab132d5247d9214cbedd4a886780a2809740176e9099f91f88e1",
+      "smoothingPlacementCount": 496,
+      "occupiedCellCount": 11266,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "09",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "f8eeeb65120bf6592e8a344e335db8a83e991069d026e952817a2d50db3c7263",
+      "smoothingPlacementCount": 597,
+      "occupiedCellCount": 11030,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "09",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "c2dbc7460015a16d8b243a8f038331f05f48f927047f1f512fad482de5b0cc63",
+      "smoothingPlacementCount": 1038,
+      "occupiedCellCount": 12408,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "10",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 14738,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "10",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "b83a27a2dac0cad067d2167b56a5306c928c6a7ce5fbfedd80bc0536cbc28251",
+      "smoothingPlacementCount": 548,
+      "occupiedCellCount": 16184,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "10",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "fbbdbe997962c75379f9cb2398e8a69bacfde256b5d66100d426823abacd904f",
+      "smoothingPlacementCount": 390,
+      "occupiedCellCount": 15972,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "10",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "d31e7d37844309619064c8e2b1a4dd4964e4839e40a219f1266da8c49645cfd1",
+      "smoothingPlacementCount": 523,
+      "occupiedCellCount": 16092,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "10",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "14b43cb0f9798f370dca0e9579fdad443cc8bcb1498bbf130e1449302bdb9197",
+      "smoothingPlacementCount": 1126,
+      "occupiedCellCount": 17972,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "11",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 15510,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "11",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "fe773d788d67c29aca66d1aaf9ac35c05c53878672c7dab632e88011b45de233",
+      "smoothingPlacementCount": 850,
+      "occupiedCellCount": 18078,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "11",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "feeee7965785481b3d707b22d64d976458eafa722b6c8b073ebe68024c3e9228",
+      "smoothingPlacementCount": 690,
+      "occupiedCellCount": 17988,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "11",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e7f2c5a171522d004aa9f1d1c426d87245c36254ccc84b9d536a33fd49ab9283",
+      "smoothingPlacementCount": 833,
+      "occupiedCellCount": 18046,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "11",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "8cc0eb523d1cab09859e0999872891dde70eee0e05d75bfe087fadc481993db2",
+      "smoothingPlacementCount": 1254,
+      "occupiedCellCount": 19384,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "12",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 18616,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "12",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "9420ec9488214d64faa43a97fbb384672914aeeb45c1e57b13cd506414fec677",
+      "smoothingPlacementCount": 852,
+      "occupiedCellCount": 21066,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "12",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "ed7febea8d11387a92625bee8aa2455a3f182288e4e7da12d64da68f5b35cfff",
+      "smoothingPlacementCount": 702,
+      "occupiedCellCount": 21318,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "12",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "3aef7abacf635738a123d5c7c36e199d4816a497b521adc754fbc573754cda07",
+      "smoothingPlacementCount": 839,
+      "occupiedCellCount": 21034,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "12",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "c09afbe4b3551764132e1b3f9b699a9ec2b39cd7c47e18741be437380ece2978",
+      "smoothingPlacementCount": 1440,
+      "occupiedCellCount": 23258,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "13",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 31509,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "13",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "d1930daec461351d6a2255ff4523f548c0413394f1f5c67d83181d1ffc49c1c3",
+      "smoothingPlacementCount": 1656,
+      "occupiedCellCount": 34955,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "13",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "490d2d1e91b780bb8e43e32c1e8b9f543ca354e57d258fab1a9a2e5f649b175b",
+      "smoothingPlacementCount": 1090,
+      "occupiedCellCount": 34427,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "13",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e71c532fa7f77de9fe6a98d56c5752686e55506593d05745e9b11d5f2b2482b8",
+      "smoothingPlacementCount": 1614,
+      "occupiedCellCount": 34767,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "13",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "146521cf20e6286f6eabed6c2899df4149dab468366cb850c6c37441c290f50a",
+      "smoothingPlacementCount": 3088,
+      "occupiedCellCount": 39611,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "14",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 13068,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "14",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "58c6623750354b2ef5690ce37a83f558d3e7948cebdb4486270f358bfe5a24e1",
+      "smoothingPlacementCount": 671,
+      "occupiedCellCount": 14358,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "14",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "49b69e18c8e8258757fb4f353e80d907f9df8641f5f485b80af1f0db189c8926",
+      "smoothingPlacementCount": 542,
+      "occupiedCellCount": 14322,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "14",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "2b1d7b34055dcf3b4c07cf0a979a6011c0ed9db72a5cf019b76a2d9c5ef269b6",
+      "smoothingPlacementCount": 659,
+      "occupiedCellCount": 14288,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "14",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "1ea143ce5ef8a4adaf0adb0b8623108b2b895be2af2503d419c85762c5e33295",
+      "smoothingPlacementCount": 1387,
+      "occupiedCellCount": 16272,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "15",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 10088,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "15",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "41a02a7dbf46449a78364ad339efda53fb983d835e3513c2b744159b34a37549",
+      "smoothingPlacementCount": 456,
+      "occupiedCellCount": 11147,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "15",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "12ee5fb152e3d831921a2ab2a7c75f95ce6e17fe221fa13e2fd0bdbac066d928",
+      "smoothingPlacementCount": 362,
+      "occupiedCellCount": 11084,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "15",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "45c007718dc52ecacdc4df09ffa3f31c7519b60eafa37333c116c7d9ee011307",
+      "smoothingPlacementCount": 452,
+      "occupiedCellCount": 11123,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "15",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "eb736a22743e3348119549273f2dab75d6381138eb1d170852179f05124e30ca",
+      "smoothingPlacementCount": 732,
+      "occupiedCellCount": 11893,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "16",
+      "method": "None",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "smoothingPlacementCount": 0,
+      "occupiedCellCount": 12612,
+      "additive": true,
+      "isRecommended": true,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "16",
+      "method": "VerticalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "3e99d6fde8942975a8405c45260a43c9f7180896df748c4a82b61ef3c4ce724e",
+      "smoothingPlacementCount": 150,
+      "occupiedCellCount": 12992,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "16",
+      "method": "HorizontalSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "3c96ab22a977823d75677f6acee9dc3ab8b81ae2e1e236ff8e4403fcdb74ee13",
+      "smoothingPlacementCount": 268,
+      "occupiedCellCount": 13606,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "16",
+      "method": "HybridSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "c1c69f9be1a6e62b95d9d63a6e2824709f22e90abc40436becdcdbe5cf2f0218",
+      "smoothingPlacementCount": 150,
+      "occupiedCellCount": 13008,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "16",
+      "method": "CombinedSlopeFill",
+      "valid": true,
+      "validatorErrorCount": 0,
+      "boundsUnchanged": true,
+      "baseNormalizedUnchanged": true,
+      "smoothingNativeSha256": "9dd6b2b3b7a842509dc2539f4dc4dfe092cbb68fd61311b5cb9182396e015679",
+      "smoothingPlacementCount": 206,
+      "occupiedCellCount": 13390,
+      "additive": true,
+      "isRecommended": false,
+      "status": "OK",
+      "statusReason": null
+    }
+  ],
+  "catalogRows": [
+    {
+      "id": "01",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "01",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "02",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "02",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "03",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "03",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "04",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "04",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "05",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "05",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "06",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "06",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "07",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "07",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "08",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "08",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "09",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "09",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "10",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "10",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "11",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "11",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "12",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "12",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "13",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "13",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "14",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "14",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "15",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "15",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "16",
+      "size": "suggested",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    },
+    {
+      "id": "16",
+      "size": "minimum",
+      "snapshotPresent": true,
+      "occupancyParity": true,
+      "catalogFallbackCount": 0,
+      "resolvedCatalogVersion": "4.3.4.0",
+      "resolvedCatalogFingerprint": "0AB1463CB9BCEB9CE9E91FCE9D8567238F5ABF0D92EEDDDEFF9180C7396AC009",
+      "fallbackPairCount": 0,
+      "diagnostics": [],
+      "status": "OK",
+      "statusReason": null
+    }
+  ],
+  "probes": {
+    "terminalColumns": [
+      {
+        "id": "05",
+        "size": "suggested",
+        "runMetres": 7,
+        "zeroLength": false
+      },
+      {
+        "id": "05",
+        "size": "minimum",
+        "runMetres": 6,
+        "zeroLength": false
+      },
+      {
+        "id": "09",
+        "size": "suggested",
+        "runMetres": 7,
+        "zeroLength": false
+      },
+      {
+        "id": "09",
+        "size": "minimum",
+        "runMetres": 6,
+        "zeroLength": false
+      }
+    ],
+    "bulbReset": {
+      "id": "10",
+      "size": "suggested",
+      "hasBulbAfter": false,
+      "bulbAfter": {
+        "lengthPercent": 8,
+        "widthPercent": 35,
+        "foreAftPercent": 0,
+        "risePercent": 0
+      },
+      "explicitBulbTuple": true,
+      "geometryIdentical": true,
+      "cleanSha256": "97fd211c5d8bd5e3a8d122d6cd9c75ff9a151f72ba252d549e347d0967efc63c",
+      "resetSha256": "97fd211c5d8bd5e3a8d122d6cd9c75ff9a151f72ba252d549e347d0967efc63c"
+    },
+    "bulb": {
+      "id": "13",
+      "size": "suggested",
+      "bulb": {
+        "lengthPercent": 12,
+        "widthPercent": 45,
+        "foreAftPercent": -4,
+        "risePercent": 0
+      },
+      "bulbEnabled": true,
+      "centrelineContiguous": true,
+      "centrelineStationsChecked": 6,
+      "faceConnected": true,
+      "shellComponentCount": 1,
+      "solidComponentCount": 1,
+      "note": null,
+      "deckStemZ": 144,
+      "stations": [
+        {
+          "z": 145,
+          "minY": 4,
+          "maxY": 15,
+          "count": 12,
+          "contiguous": true
+        },
+        {
+          "z": 146,
+          "minY": 5,
+          "maxY": 15,
+          "count": 11,
+          "contiguous": true
+        },
+        {
+          "z": 147,
+          "minY": 5,
+          "maxY": 14,
+          "count": 10,
+          "contiguous": true
+        },
+        {
+          "z": 148,
+          "minY": 6,
+          "maxY": 13,
+          "count": 8,
+          "contiguous": true
+        },
+        {
+          "z": 149,
+          "minY": 7,
+          "maxY": 12,
+          "count": 6,
+          "contiguous": true
+        },
+        {
+          "z": 150,
+          "minY": 10,
+          "maxY": 10,
+          "count": 1,
+          "contiguous": true
+        }
+      ]
+    },
+    "deckRuler": {
+      "id": "13",
+      "size": "suggested",
+      "bulbRulerResolved": true,
+      "disabledRulerResolved": true,
+      "identical": false,
+      "contaminated": false,
+      "note": "Observed, not a violation: the bulb replaces the forward stem, so the supported deck interval moves 6 m aft (bow datum 149.5 m -\u003E 143.5 m, supported end 301 m -\u003E 295 m). The ruler is derived from structural deck armour only: its bow station carries structural deck armour, the 7 station(s) forward of it (to the bulb tip at Z=150) carry none, and the bulb does not extend the supported interval.",
+      "bulbBowDatum": "143.5 m",
+      "bulbSupportedEnd": "295 m",
+      "disabledBowDatum": "149.5 m",
+      "disabledSupportedEnd": "301 m",
+      "rulerBowStation": 143,
+      "bulbTipStation": 150,
+      "forwardOfRulerStationCount": 7,
+      "forwardOfRulerStationsCarryDeckArmor": false,
+      "rulerBowStationIsDeckArmor": true,
+      "bulbExtendsSupportedInterval": false,
+      "stemShortenedMetres": 6
+    },
+    "tumblehome": {
+      "primary": {
+        "id": "15",
+        "size": "suggested",
+        "maxHalfBreadth": 14,
+        "maxHalfBreadthY": 10,
+        "topOccupiedY": 15,
+        "tumblehomeDelta": 4,
+        "contourCount": 12,
+        "closedContourCount": 12,
+        "maxBelowTopRow": true,
+        "sectionClosed": true,
+        "isTumblehome": true
+      },
+      "contrast": {
+        "id": "10",
+        "size": "suggested",
+        "maxHalfBreadth": 14,
+        "maxHalfBreadthY": 14,
+        "topOccupiedY": 14,
+        "tumblehomeDelta": 0,
+        "contourCount": 10,
+        "closedContourCount": 10,
+        "maxBelowTopRow": false,
+        "sectionClosed": true,
+        "isTumblehome": false
+      }
+    }
+  },
+  "pairs": [
+    {
+      "leftId": "01",
+      "rightId": "12",
+      "leftDimensions": "36x9x6",
+      "rightDimensions": "272x35x22",
+      "leftBounds": "[-4..4]x[0..5]x[-18..17]",
+      "rightBounds": "[-17..17]x[0..21]x[-136..135]",
+      "leftOccupiedCellCount": 619,
+      "rightOccupiedCellCount": 18616,
+      "leftBaseSha256": "cbf8307d5c5040920947a89d96c2e95aff6c0d701b8259a1f47cf35e82f5c39c",
+      "rightBaseSha256": "90b60095aaeb1ba1814bd4691d7ddcc02dfc7cb169062db6ef148e35fac29892",
+      "baseHashesDiffer": true,
+      "descriptorDistance": 0.8937959790716142
+    },
+    {
+      "leftId": "03",
+      "rightId": "16",
+      "leftDimensions": "48x13x5",
+      "rightDimensions": "156x39x10",
+      "leftBounds": "[-6..6]x[0..4]x[-24..23]",
+      "rightBounds": "[-19..19]x[0..9]x[-78..77]",
+      "leftOccupiedCellCount": 1258,
+      "rightOccupiedCellCount": 12612,
+      "leftBaseSha256": "0c6ee229633c6fe5338cc639b2bc525cd1df9ed86282b386164582c6b50b417e",
+      "rightBaseSha256": "9377c2e015dc178c34f39594d6e159eb03619535c31269ba57d28ed667e5a807",
+      "baseHashesDiffer": true,
+      "descriptorDistance": 0.8156909600300957
+    },
+    {
+      "leftId": "06",
+      "rightId": "10",
+      "leftDimensions": "132x19x11",
+      "rightDimensions": "228x29x17",
+      "leftBounds": "[-9..9]x[0..10]x[-66..65]",
+      "rightBounds": "[-14..14]x[0..16]x[-114..113]",
+      "leftOccupiedCellCount": 5370,
+      "rightOccupiedCellCount": 14738,
+      "leftBaseSha256": "0e21ffeebce5497b9a0a851492886c51a04e8f6f926fa8aaa0b1ca65b4b808c2",
+      "rightBaseSha256": "97fd211c5d8bd5e3a8d122d6cd9c75ff9a151f72ba252d549e347d0967efc63c",
+      "baseHashesDiffer": true,
+      "descriptorDistance": 0.39889439135205074
+    },
+    {
+      "leftId": "10",
+      "rightId": "15",
+      "leftDimensions": "228x29x17",
+      "rightDimensions": "168x29x17",
+      "leftBounds": "[-14..14]x[0..16]x[-114..113]",
+      "rightBounds": "[-14..14]x[0..16]x[-84..83]",
+      "leftOccupiedCellCount": 14738,
+      "rightOccupiedCellCount": 10088,
+      "leftBaseSha256": "97fd211c5d8bd5e3a8d122d6cd9c75ff9a151f72ba252d549e347d0967efc63c",
+      "rightBaseSha256": "639737a5ce46ced6bed1080589033b5cbf0a9cd8d12f8b68f7e9259c62b962ac",
+      "baseHashesDiffer": true,
+      "descriptorDistance": 0.3084231693103158
+    },
+    {
+      "leftId": "05",
+      "rightId": "09",
+      "leftDimensions": "142x17x16",
+      "rightDimensions": "194x25x21",
+      "leftBounds": "[-8..8]x[0..15]x[-71..70]",
+      "rightBounds": "[-12..12]x[0..20]x[-97..96]",
+      "leftOccupiedCellCount": 5041,
+      "rightOccupiedCellCount": 9654,
+      "leftBaseSha256": "f141b20c7e19297eabb02f1f8f9d0e47e082cc3fb42ec16bf4025df1f4d3a90a",
+      "rightBaseSha256": "9a66ef55a2939e6f20ea15b7910aafdec2eb2a5e4dcfc80ce91f25e8fa21b2d7",
+      "baseHashesDiffer": true,
+      "descriptorDistance": 0.4561794098589268
+    }
+  ],
+  "nearestNeighbours": [
+    {
+      "id": "01",
+      "nearestId": "15",
+      "l2Distance": 0.4997320225495898,
+      "descriptor": [
+        0.5555555555555556,
+        0.7777777777777778,
+        0.7777777777777778,
+        0.7777777777777778,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.7777777777777778,
+        0.7777777777777778,
+        0.7777777777777778,
+        0.7777777777777778,
+        0.5555555555555556,
+        0.5555555555555556,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.1111111111111111
+      ]
+    },
+    {
+      "id": "02",
+      "nearestId": "13",
+      "l2Distance": 0.5994521867433708,
+      "descriptor": [
+        0.09090909090909091,
+        0.45454545454545453,
+        0.6363636363636364,
+        0.6363636363636364,
+        0.8181818181818182,
+        0.8181818181818182,
+        0.8181818181818182,
+        0.8181818181818182,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.8181818181818182,
+        0.8181818181818182,
+        0.8181818181818182,
+        0.6363636363636364,
+        0.09090909090909091
+      ]
+    },
+    {
+      "id": "03",
+      "nearestId": "06",
+      "l2Distance": 0.39923216309703813,
+      "descriptor": [
+        0.8461538461538461,
+        0.8461538461538461,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.8461538461538461,
+        0.6923076923076923,
+        0.5384615384615384,
+        0.38461538461538464,
+        0.07692307692307693,
+        0.07692307692307693
+      ]
+    },
+    {
+      "id": "04",
+      "nearestId": "11",
+      "l2Distance": 0.6190557272263097,
+      "descriptor": [
+        0.07692307692307693,
+        0.38461538461538464,
+        0.5384615384615384,
+        0.6923076923076923,
+        0.8461538461538461,
+        0.8461538461538461,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.8461538461538461,
+        0.8461538461538461,
+        0.8461538461538461,
+        0.8461538461538461,
+        0.6923076923076923,
+        0.6923076923076923,
+        0.6923076923076923,
+        0.6923076923076923,
+        0.5384615384615384,
+        0.5384615384615384,
+        0.5384615384615384,
+        0.38461538461538464,
+        0.38461538461538464,
+        0.38461538461538464,
+        0.23076923076923078,
+        0.23076923076923078,
+        0.07692307692307693
+      ]
+    },
+    {
+      "id": "05",
+      "nearestId": "09",
+      "l2Distance": 0.4561794098589268,
+      "descriptor": [
+        0.6470588235294118,
+        0.6470588235294118,
+        0.7647058823529411,
+        0.7647058823529411,
+        0.8823529411764706,
+        0.8823529411764706,
+        0.8823529411764706,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.8823529411764706,
+        0.8823529411764706,
+        0.7647058823529411,
+        0.6470588235294118,
+        0.5294117647058824,
+        0.29411764705882354,
+        0.17647058823529413,
+        0.058823529411764705,
+        0.058823529411764705
+      ]
+    },
+    {
+      "id": "06",
+      "nearestId": "10",
+      "l2Distance": 0.39889439135205074,
+      "descriptor": [
+        0.6842105263157895,
+        0.6842105263157895,
+        0.7894736842105263,
+        0.8947368421052632,
+        0.8947368421052632,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.8947368421052632,
+        0.7894736842105263,
+        0.6842105263157895,
+        0.3684210526315789,
+        0.15789473684210525,
+        0.05263157894736842
+      ]
+    },
+    {
+      "id": "07",
+      "nearestId": "14",
+      "l2Distance": 0.7305591097016011,
+      "descriptor": [
+        0.21739130434782608,
+        0.391304347826087,
+        0.4782608695652174,
+        0.5652173913043478,
+        0.6521739130434783,
+        0.6521739130434783,
+        0.7391304347826086,
+        0.7391304347826086,
+        0.8260869565217391,
+        0.8260869565217391,
+        0.9130434782608695,
+        0.9130434782608695,
+        0.9130434782608695,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9130434782608695,
+        0.8260869565217391,
+        0.5652173913043478,
+        0.391304347826087,
+        0.13043478260869565,
+        0.043478260869565216
+      ]
+    },
+    {
+      "id": "08",
+      "nearestId": "12",
+      "l2Distance": 0.33187004409553444,
+      "descriptor": [
+        0.6521739130434783,
+        0.6521739130434783,
+        0.7391304347826086,
+        0.8260869565217391,
+        0.9130434782608695,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9130434782608695,
+        0.9130434782608695,
+        0.9130434782608695,
+        0.9130434782608695,
+        0.8260869565217391,
+        0.8260869565217391,
+        0.7391304347826086,
+        0.7391304347826086,
+        0.6521739130434783,
+        0.6521739130434783,
+        0.5652173913043478,
+        0.5652173913043478,
+        0.4782608695652174,
+        0.391304347826087,
+        0.391304347826087,
+        0.30434782608695654,
+        0.21739130434782608,
+        0.21739130434782608,
+        0.13043478260869565,
+        0.043478260869565216
+      ]
+    },
+    {
+      "id": "09",
+      "nearestId": "05",
+      "l2Distance": 0.4561794098589268,
+      "descriptor": [
+        0.28,
+        0.6,
+        0.76,
+        0.84,
+        0.92,
+        0.92,
+        0.92,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.92,
+        0.84,
+        0.76,
+        0.6,
+        0.44,
+        0.2,
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "id": "10",
+      "nearestId": "15",
+      "l2Distance": 0.3084231693103158,
+      "descriptor": [
+        0.6551724137931034,
+        0.7241379310344828,
+        0.7931034482758621,
+        0.9310344827586207,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9310344827586207,
+        0.9310344827586207,
+        0.8620689655172413,
+        0.7931034482758621,
+        0.7241379310344828,
+        0.5862068965517241,
+        0.4482758620689655,
+        0.034482758620689655
+      ]
+    },
+    {
+      "id": "11",
+      "nearestId": "04",
+      "l2Distance": 0.6190557272263097,
+      "descriptor": [
+        0.22580645161290322,
+        0.4838709677419355,
+        0.5483870967741935,
+        0.6129032258064516,
+        0.6774193548387096,
+        0.7419354838709677,
+        0.8064516129032258,
+        0.8709677419354839,
+        0.8709677419354839,
+        0.9354838709677419,
+        0.9354838709677419,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9354838709677419,
+        0.9354838709677419,
+        0.9354838709677419,
+        0.8709677419354839,
+        0.8709677419354839,
+        0.8064516129032258,
+        0.7419354838709677,
+        0.6774193548387096,
+        0.6774193548387096,
+        0.6129032258064516,
+        0.5483870967741935,
+        0.4838709677419355,
+        0.41935483870967744,
+        0.3548387096774194,
+        0.22580645161290322,
+        0.03225806451612903
+      ]
+    },
+    {
+      "id": "12",
+      "nearestId": "08",
+      "l2Distance": 0.33187004409553444,
+      "descriptor": [
+        0.6571428571428571,
+        0.6571428571428571,
+        0.7714285714285715,
+        0.8285714285714286,
+        0.9428571428571428,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9428571428571428,
+        0.9428571428571428,
+        0.9428571428571428,
+        0.8857142857142857,
+        0.8285714285714286,
+        0.8285714285714286,
+        0.7714285714285715,
+        0.7142857142857143,
+        0.6571428571428571,
+        0.6,
+        0.5428571428571428,
+        0.4857142857142857,
+        0.42857142857142855,
+        0.37142857142857144,
+        0.3142857142857143,
+        0.2571428571428571,
+        0.14285714285714285,
+        0.02857142857142857
+      ]
+    },
+    {
+      "id": "13",
+      "nearestId": "14",
+      "l2Distance": 0.3573417027742178,
+      "descriptor": [
+        0.24444444444444444,
+        0.6444444444444445,
+        0.7777777777777778,
+        0.8666666666666667,
+        0.9111111111111111,
+        0.9555555555555556,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9555555555555556,
+        0.9111111111111111,
+        0.8666666666666667,
+        0.7777777777777778,
+        0.6,
+        0.37777777777777777,
+        0.022222222222222223
+      ]
+    },
+    {
+      "id": "14",
+      "nearestId": "13",
+      "l2Distance": 0.3573417027742178,
+      "descriptor": [
+        0.21212121212121213,
+        0.6363636363636364,
+        0.7575757575757576,
+        0.8181818181818182,
+        0.8787878787878788,
+        0.9393939393939394,
+        0.9393939393939394,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9393939393939394,
+        0.8181818181818182,
+        0.6363636363636364,
+        0.3939393939393939,
+        0.15151515151515152,
+        0.030303030303030304
+      ]
+    },
+    {
+      "id": "15",
+      "nearestId": "10",
+      "l2Distance": 0.3084231693103158,
+      "descriptor": [
+        0.7931034482758621,
+        0.8620689655172413,
+        0.9310344827586207,
+        0.9310344827586207,
+        0.9310344827586207,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9310344827586207,
+        0.9310344827586207,
+        0.8620689655172413,
+        0.7931034482758621,
+        0.7241379310344828,
+        0.6551724137931034,
+        0.5172413793103449,
+        0.3793103448275862,
+        0.034482758620689655
+      ]
+    },
+    {
+      "id": "16",
+      "nearestId": "01",
+      "l2Distance": 0.6043647702449124,
+      "descriptor": [
+        0.8461538461538461,
+        0.8461538461538461,
+        0.8974358974358975,
+        0.9487179487179487,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.9487179487179487,
+        0.8461538461538461,
+        0.7948717948717948,
+        0.6923076923076923,
+        0.6410256410256411,
+        0.5897435897435898,
+        0.5384615384615384,
+        0.48717948717948717,
+        0.48717948717948717,
+        0.4358974358974359,
+        0.4358974358974359
+      ]
+    }
+  ],
+  "collapsedPairs": [],
+  "findings": [],
+  "statuses": [
+    {
+      "id": "01",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "02",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "03",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "04",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "05",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "06",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "07",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "08",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "09",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "10",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "11",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "12",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "13",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "14",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "15",
+      "status": "OK",
+      "reason": null
+    },
+    {
+      "id": "16",
+      "status": "OK",
+      "reason": null
+    }
+  ]
+}

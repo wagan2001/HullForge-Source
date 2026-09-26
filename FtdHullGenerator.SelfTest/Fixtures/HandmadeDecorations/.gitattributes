@@ -1,0 +1,2 @@
+# Independent source bytes must survive checkout without newline conversion.
+*.blueprint -text
